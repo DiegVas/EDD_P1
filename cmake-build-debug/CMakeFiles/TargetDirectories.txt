@@ -1,0 +1,3 @@
+C:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir
+C:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/cmake-build-debug/CMakeFiles/rebuild_cache.dir
