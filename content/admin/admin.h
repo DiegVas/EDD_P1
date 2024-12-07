@@ -5,4 +5,7 @@
 #ifndef ADMIN_H
 #define ADMIN_H
 
+void menu_Admin();
+
+
 #endif //ADMIN_H

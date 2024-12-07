@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
+#include "./content/admin/admin.h"
 
-void showMenu();
+void show_Menu();
 void login();
-void registerUser();
 
 // TODO : Credenciales de usuario admin
 const std::string ADMIN_USER = "admin";
@@ -14,7 +14,7 @@ int main() {
     int choice;
 
     do {
-        showMenu();
+        show_Menu();
         std::cin >> choice;
 
         switch (choice) {
@@ -31,7 +31,7 @@ int main() {
     } while (choice != 2);
 }
 
-void showMenu() {
+void show_Menu() {
     std::cout << "//////////////// RENTA DE ACTIVOS ////////////////" << std::endl;
     std::cout << "[1]. Login" << std::endl;
     std::cout << "[2]. Exit" << std::endl;
@@ -48,6 +48,7 @@ void login() {
 
     if (username == ADMIN_USER && password == ADMIN_PASS) {
         std::cout << "Bienvenido " << username << "!" << std::endl;
+        menu_Admin();
     }
 }
 
