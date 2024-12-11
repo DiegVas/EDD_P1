@@ -6,6 +6,6 @@ nodeMatrix::nodeMatrix(const int value) {
     this->up = nullptr;
     this->down = nullptr;
     this->next = nullptr;
-    this->previous = nullptr;
-    this -> value = value;
+    this->prev = nullptr;
+    this->value = value;
 };

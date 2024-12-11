@@ -1,8 +1,10 @@
 #include <iostream>
 #include <string>
 #include "./content/admin/admin.h"
+#include "controllers/sparseMatrix.h"
 
 void show_Menu();
+
 void login();
 
 // TODO : Credenciales de usuario admin
@@ -10,25 +12,32 @@ const std::string ADMIN_USER = "admin";
 const std::string ADMIN_PASS = "admin";
 
 int main() {
+    sparse_Matrix *matrix = new sparse_Matrix();
+    matrix->insertHeaders(11, 1, 1);
+    matrix->insertHeaders(22, 2, 2);
+    matrix->insertHeaders(12, 1, 2);
+    matrix->insertHeaders(21, 2, 1);
 
-    int choice;
 
-    do {
-        show_Menu();
-        std::cin >> choice;
-
-        switch (choice) {
-            case 1:
-                login();
-                break;
-            case 2:
-                std::cout << "Gracias por preferirnos!." << std::endl;
-                break;
-            default:
-                std::cout << "Por favor ingrese una opcion valida" << std::endl;
-        }
-
-    } while (choice != 2);
+    //
+    // int choice;
+    //
+    // do {
+    //     show_Menu();
+    //     std::cin >> choice;
+    //
+    //     switch (choice) {
+    //         case 1:
+    //             login();
+    //             break;
+    //         case 2:
+    //             std::cout << "Gracias por preferirnos!." << std::endl;
+    //             break;
+    //         default:
+    //             std::cout << "Por favor ingrese una opcion valida" << std::endl;
+    //     }
+    //
+    // } while (choice != 2);
 }
 
 void show_Menu() {
