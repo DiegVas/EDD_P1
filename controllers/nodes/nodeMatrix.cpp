@@ -1,11 +1,18 @@
 #include "nodeMatrix.h"
 
-nodeMatrix::nodeMatrix(const int value) {
+#include <algorithm>
+#include <string>
+#include "../functions/toLowerCase.h"
+
+nodeMatrix::nodeMatrix(std::string userName) {
     this->front = nullptr;
     this->behind = nullptr;
     this->up = nullptr;
     this->down = nullptr;
     this->next = nullptr;
     this->prev = nullptr;
-    this->value = value;
+
+    // ! Inicializamos el nombre de usuario y convertir a minusculas
+
+    this->userName = toLowerCase(userName);
 };

@@ -13,10 +13,10 @@ const std::string ADMIN_PASS = "admin";
 
 int main() {
     sparse_Matrix *matrix = new sparse_Matrix();
-    matrix->insertHeaders(11, 1, 1);
-    matrix->insertHeaders(22, 2, 2);
-    matrix->insertHeaders(12, 1, 2);
-    matrix->insertHeaders(21, 2, 1);
+    matrix->insertHeaders("Usuario11", "Guate", "Max");
+    matrix->insertHeaders("Usuario22", "Villa", "Cine");
+    matrix->insertHeaders("Usuario12", "Guate", "CIne");
+    matrix->insertHeaders("Usuario21", "guate", "Maxi");
 
 
     //

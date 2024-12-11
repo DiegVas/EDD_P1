@@ -22,39 +22,39 @@ public:
     bool isEmpy() const;
 
     // ? Metodos para crear una cabezera horizontal nodo en la matriz dispersa
-    nodeMatrix *getHeaderH(int value) const;
+    nodeMatrix *getHeaderH(std::string value) const;
 
-    nodeMatrix *getHeaderV(int value) const;
+    nodeMatrix *getHeaderV(std::string value) const;
 
     // ? Metodos para insertar cabezeras en la matriz dispersa
-    nodeMatrix *insertHeaderH(int value);
+    nodeMatrix *insertHeaderH(std::string value);
 
-    nodeMatrix *insertHeaderV(int value);
+    nodeMatrix *insertHeaderV(std::string value);
 
-    void insertHeaders(int value, int headerH, int headerV);
+    void insertHeaders(std::string value, std::string headerH, std::string headerV);
 
     // ? Metodo para insertar un nodo en la matriz dispersa
 
     // ! Solo si en algun caso esta al final de una cabezera horizontal y vertical
-    void insertFinal(nodeMatrix *value, nodeMatrix *headerH, nodeMatrix *headerV);
+    static void insertFinal(nodeMatrix *value, nodeMatrix *headerH, nodeMatrix *headerV);
 
-    void insertFinalH(nodeMatrix *value, nodeMatrix *headerH);
+    static void insertFinalH(nodeMatrix *value, nodeMatrix *headerH);
 
-    void insertFinalV(nodeMatrix *value, nodeMatrix *headerV);
+    static void insertFinalV(nodeMatrix *value, nodeMatrix *headerV);
 
-    void insertMiddleV(nodeMatrix *value, nodeMatrix *headerV);
+    static void insertMiddleV(nodeMatrix *value, nodeMatrix *headerV);
 
-    void insertMiddleH(nodeMatrix *value, nodeMatrix *headerH);
+    static void insertMiddleH(nodeMatrix *value, nodeMatrix *headerH);
 
 
     // ? Metodo para encontrar la ubicacion de la cabezera
-    nodeMatrix *findHeaderH(nodeMatrix *headerH) const;
+    static nodeMatrix *findHeaderH(nodeMatrix *headerH);
 
-    nodeMatrix *findHeaderV(nodeMatrix *headerH) const;
+    static nodeMatrix *findHeaderV(nodeMatrix *headerH);
 
-    bool moreDown(nodeMatrix *headerV, int headderValue) const;
+    static bool moreDown(nodeMatrix *headerV, std::string headderValue);
 
-    bool moreRight(nodeMatrix *headerH, int headderValue) const;
+    static bool moreRight(nodeMatrix *headerH, std::string headderValue);
 };
 
 

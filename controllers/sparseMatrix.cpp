@@ -1,6 +1,7 @@
 
 #include "sparseMatrix.h"
 #include "nodes/nodeMatrix.h"
+#include "./functions/toLowerCase.h"
 
 sparse_Matrix::sparse_Matrix() {
     this->headerH = nullptr;
@@ -12,13 +13,13 @@ bool sparse_Matrix::isEmpy() const {
 }
 
 // ? Metodo para obtener una cabezera horizontal nodo en la matriz dispersa
-nodeMatrix *sparse_Matrix::getHeaderH(int value) const {
+nodeMatrix *sparse_Matrix::getHeaderH(std::string value) const {
     if (isEmpy()) return nullptr;
 
     nodeMatrix *aux = headerH;
 
     while (aux != nullptr) {
-        if (aux->value == value) {
+        if (aux->userName == value) {
             return aux;
         }
         aux = aux->next;
@@ -28,13 +29,13 @@ nodeMatrix *sparse_Matrix::getHeaderH(int value) const {
 }
 
 // ? Metodo para obtener una cabezera vertical nodo en la matriz dispersa
-nodeMatrix *sparse_Matrix::getHeaderV(const int value) const {
+nodeMatrix *sparse_Matrix::getHeaderV(std::string value) const {
     if (isEmpy()) return nullptr;
 
     nodeMatrix *aux = headerV;
 
     while (aux != nullptr) {
-        if (aux->value == value) {
+        if (aux->userName == value) {
             return aux;
         }
         aux = aux->down;
@@ -44,7 +45,7 @@ nodeMatrix *sparse_Matrix::getHeaderV(const int value) const {
 }
 
 // ? Metodos para insertar cabezeras horizontale en la matriz dispersa
-nodeMatrix *sparse_Matrix::insertHeaderH(int value) {
+nodeMatrix *sparse_Matrix::insertHeaderH(std::string value) {
     nodeMatrix *newNode = new nodeMatrix(value);
 
     // ! Si la matriz esta vacia
@@ -65,7 +66,7 @@ nodeMatrix *sparse_Matrix::insertHeaderH(int value) {
 }
 
 // ? Metodos para insertar cabezeras verticales en la matriz dispersa
-nodeMatrix *sparse_Matrix::insertHeaderV(const int value) {
+nodeMatrix *sparse_Matrix::insertHeaderV(std::string value) {
     nodeMatrix *newNode = new nodeMatrix(value);
 
     // ! Si la matriz esta vacia
@@ -87,7 +88,11 @@ nodeMatrix *sparse_Matrix::insertHeaderV(const int value) {
 }
 
 // ? Metodo para iniciar  cabezeras en la matriz dispersa
-void sparse_Matrix::insertHeaders(int value, int headerH, int headerV) {
+void sparse_Matrix::insertHeaders(std::string value, std::string headerH, std::string headerV) {
+    value = toLowerCase(value);
+    headerH = toLowerCase(headerH);
+    headerV = toLowerCase(headerV);
+
     nodeMatrix *headH = nullptr;
     nodeMatrix *headV = nullptr;
 
@@ -112,13 +117,13 @@ void sparse_Matrix::insertHeaders(int value, int headerH, int headerV) {
 
     if (headH == nullptr) {
         headH = insertHeaderH(headerH);
-        insertFinalH(newUser, headH);
+        insertFinal(newUser, headH, headV);
         return;
     }
 
     if (headV == nullptr) {
         headV = insertHeaderV(headerV);
-        insertFinalV(newUser, headV);
+        insertFinal(newUser, headH, headV);
         return;
     }
 
@@ -200,7 +205,7 @@ void sparse_Matrix::insertMiddleH(nodeMatrix *value, nodeMatrix *headerHN) {
     headerHN->up = value;
 }
 
-nodeMatrix *sparse_Matrix::findHeaderH(nodeMatrix *nodeH) const {
+nodeMatrix *sparse_Matrix::findHeaderH(nodeMatrix *nodeH) {
     nodeMatrix *aux = nodeH;
     while (aux->up != nullptr) {
         aux = aux->up;
@@ -208,7 +213,7 @@ nodeMatrix *sparse_Matrix::findHeaderH(nodeMatrix *nodeH) const {
     return aux;
 }
 
-nodeMatrix *sparse_Matrix::findHeaderV(nodeMatrix *nodeV) const {
+nodeMatrix *sparse_Matrix::findHeaderV(nodeMatrix *nodeV) {
     nodeMatrix *aux = nodeV;
     while (aux->prev != nullptr) {
         aux = aux->prev;
@@ -216,19 +221,19 @@ nodeMatrix *sparse_Matrix::findHeaderV(nodeMatrix *nodeV) const {
     return aux;
 }
 
-bool sparse_Matrix::moreDown(nodeMatrix *headerV, int headderValue) const {
+bool sparse_Matrix::moreDown(nodeMatrix *headerV, std::string headderValue) {
     nodeMatrix *aux = headerV;
     while (aux != nullptr) {
-        if (aux->value == headderValue) return true;
+        if (aux->userName == headderValue) return true;
         aux = aux->down;
     }
     return false;
 }
 
-bool sparse_Matrix::moreRight(nodeMatrix *headerH, int headderValue) const {
+bool sparse_Matrix::moreRight(nodeMatrix *headerH, std::string headderValue) {
     nodeMatrix *aux = headerH;
     while (aux != nullptr) {
-        if (aux->value == headderValue) return true;
+        if (aux->userName == headderValue) return true;
         aux = aux->next;
     }
     return false;
