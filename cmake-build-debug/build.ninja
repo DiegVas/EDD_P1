@@ -61,17 +61,17 @@ build CMakeFiles/EDD_P1_202300638.dir/content/admin/admin.cpp.obj: CXX_COMPILER_
   OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
   OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\content\admin
 
-build CMakeFiles/EDD_P1_202300638.dir/controllers/sparseMatrix.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/sparseMatrix.cpp || cmake_object_order_depends_target_EDD_P1_202300638
-  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\sparseMatrix.cpp.obj.d
+build CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/sparseMatrix/sparseMatrix.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/dataStructure/sparseMatrix/sparseMatrix.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\dataStructure\sparseMatrix\sparseMatrix.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
-  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers
+  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\dataStructure\sparseMatrix
 
-build CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/nodeMatrix.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/nodes/nodeMatrix.cpp || cmake_object_order_depends_target_EDD_P1_202300638
-  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\nodes\nodeMatrix.cpp.obj.d
+build CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/disperseMatrix/nodeMatrix.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/nodes/disperseMatrix/nodeMatrix.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\nodes\disperseMatrix\nodeMatrix.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
-  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\nodes
+  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\nodes\disperseMatrix
 
 build CMakeFiles/EDD_P1_202300638.dir/controllers/functions/toLowerCase.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/functions/toLowerCase.cpp || cmake_object_order_depends_target_EDD_P1_202300638
   DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\functions\toLowerCase.cpp.obj.d
@@ -87,7 +87,7 @@ build CMakeFiles/EDD_P1_202300638.dir/controllers/functions/toLowerCase.cpp.obj:
 #############################################
 # Link the executable EDD_P1_202300638.exe
 
-build EDD_P1_202300638.exe: CXX_EXECUTABLE_LINKER__EDD_P1_202300638_Debug CMakeFiles/EDD_P1_202300638.dir/main.cpp.obj CMakeFiles/EDD_P1_202300638.dir/content/admin/admin.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/sparseMatrix.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/nodeMatrix.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/functions/toLowerCase.cpp.obj
+build EDD_P1_202300638.exe: CXX_EXECUTABLE_LINKER__EDD_P1_202300638_Debug CMakeFiles/EDD_P1_202300638.dir/main.cpp.obj CMakeFiles/EDD_P1_202300638.dir/content/admin/admin.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/sparseMatrix/sparseMatrix.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/disperseMatrix/nodeMatrix.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/functions/toLowerCase.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir

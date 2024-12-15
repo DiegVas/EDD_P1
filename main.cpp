@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 #include "./content/admin/admin.h"
-#include "controllers/sparseMatrix.h"
+#include "controllers/dataStructure/sparseMatrix/sparseMatrix.h"
+#include "controllers/dataStructure/avlTree/avlTree.h"
 
 void show_Menu();
 
@@ -11,8 +12,22 @@ void login();
 const std::string ADMIN_USER = "admin";
 const std::string ADMIN_PASS = "admin";
 
-int main() {
-    sparse_Matrix *matrix = new sparse_Matrix();
+int main()
+{
+    sparse_Matrix* matrix = new sparse_Matrix();
+    avlTree* tree = new avlTree();
+
+    tree->insert(0);
+    tree->insert(1);
+    tree->insert(2);
+    tree->insert(3);
+    tree->insert(4);
+    tree->insert(5);
+    tree->insert(6);
+    tree->insert(7);
+    tree->insert(8);
+    tree->insert(9);
+    tree->insert(10);
 
 
     int choice;
@@ -35,14 +50,16 @@ int main() {
     // } while (choice != 2);
 }
 
-void show_Menu() {
+void show_Menu()
+{
     std::cout << "//////////////// RENTA DE ACTIVOS ////////////////" << std::endl;
     std::cout << "[1]. Login" << std::endl;
     std::cout << "[2]. Exit" << std::endl;
     std::cout << "Ingrese una opcion:  ";
 }
 
-void login() {
+void login()
+{
     std::cout << "*-------------------* LOGIN *-------------------*" << std::endl;
     std::string username, password;
     std::cout << "Ingrese su usuario: ";
@@ -50,7 +67,8 @@ void login() {
     std::cout << "Ingrese la contraseña: ";
     std::cin >> password;
 
-    if (username == ADMIN_USER && password == ADMIN_PASS) {
+    if (username == ADMIN_USER && password == ADMIN_PASS)
+    {
         std::cout << "Bienvenido " << username << "!" << std::endl;
         menu_Admin();
     }

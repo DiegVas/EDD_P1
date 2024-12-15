@@ -6,10 +6,10 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(EDD_P1_202300638 main.cpp
         content/admin/admin.h
         content/admin/admin.cpp
-        controllers/sparseMatrix.h
-        controllers/sparseMatrix.cpp
-        controllers/nodes/NodeMatrix.h
-        controllers/nodes/nodeMatrix.cpp
+        controllers/dataStructure/sparseMatrix/sparseMatrix.h
+        controllers/dataStructure/sparseMatrix/sparseMatrix.cpp
+        controllers/nodes/disperseMatrix/nodeMatrix.h
+        controllers/nodes/disperseMatrix/nodeMatrix.cpp
         controllers/functions/toLowerCase.h
         controllers/functions/toLowerCase.cpp
 )

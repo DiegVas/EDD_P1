@@ -2,9 +2,10 @@
 
 #include <algorithm>
 #include <string>
-#include "../functions/toLowerCase.h"
+#include "../../functions/toLowerCase.h"
 
-nodeMatrix::nodeMatrix(std::string userName) {
+nodeMatrix::nodeMatrix(std::string userName)
+{
     this->front = nullptr;
     this->behind = nullptr;
     this->up = nullptr;
