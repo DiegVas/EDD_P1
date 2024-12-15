@@ -20,6 +20,8 @@ add_executable(EDD_P1_202300638 main.cpp
         controllers/structs/activeStruct.cpp
         controllers/structs/userStruct.cpp
         controllers/structs/userStruct.h
-        controllers/graph/sparseGraph.h
-        controllers/graph/sparseGraph.cpp
+        controllers/graph/graphGenerator.cpp
+        controllers/graph/sparseDot.cpp
+        controllers/graph/sparseDot.h
+        controllers/graph/graphGenerator.h
 )

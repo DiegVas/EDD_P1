@@ -16,5 +16,6 @@ userStruct::userStruct(std::string userName, std::string fullName, std::string p
   this->actives = new avlTree();
   this->company = company;
   this->country = country;
+    this->cell = company+"_"+country;
 
 }

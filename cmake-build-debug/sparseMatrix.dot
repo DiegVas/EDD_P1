@@ -1,0 +1,6 @@
+digraph G {
+    "empresa1" -> "user1";
+    "empresa2" -> "user2";
+    "guatemala" -> "user1";
+    "guatemala" -> "user2";
+}

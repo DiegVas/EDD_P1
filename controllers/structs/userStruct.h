@@ -15,6 +15,7 @@ public:
     std::string password;
     std::string company;
     std::string country;
+    std::string cell;
 
     // ? AVL tree activos
     avlTree *actives;

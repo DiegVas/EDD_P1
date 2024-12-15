@@ -194,19 +194,33 @@ CMakeFiles/EDD_P1_202300638.dir/controllers/structs/userStruct.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EDD_P1_202300638.dir/controllers/structs/userStruct.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\controllers\structs\userStruct.cpp -o CMakeFiles\EDD_P1_202300638.dir\controllers\structs\userStruct.cpp.s
 
-CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.obj: CMakeFiles/EDD_P1_202300638.dir/flags.make
-CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.obj: C:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/graph/sparseGraph.cpp
-CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.obj: CMakeFiles/EDD_P1_202300638.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.obj -MF CMakeFiles\EDD_P1_202300638.dir\controllers\graph\sparseGraph.cpp.obj.d -o CMakeFiles\EDD_P1_202300638.dir\controllers\graph\sparseGraph.cpp.obj -c C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\controllers\graph\sparseGraph.cpp
+CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj: CMakeFiles/EDD_P1_202300638.dir/flags.make
+CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj: C:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/graph/graphGenerator.cpp
+CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj: CMakeFiles/EDD_P1_202300638.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj -MF CMakeFiles\EDD_P1_202300638.dir\controllers\graph\graphGenerator.cpp.obj.d -o CMakeFiles\EDD_P1_202300638.dir\controllers\graph\graphGenerator.cpp.obj -c C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\controllers\graph\graphGenerator.cpp
 
-CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\controllers\graph\sparseGraph.cpp > CMakeFiles\EDD_P1_202300638.dir\controllers\graph\sparseGraph.cpp.i
+CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\controllers\graph\graphGenerator.cpp > CMakeFiles\EDD_P1_202300638.dir\controllers\graph\graphGenerator.cpp.i
 
-CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\controllers\graph\sparseGraph.cpp -o CMakeFiles\EDD_P1_202300638.dir\controllers\graph\sparseGraph.cpp.s
+CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\controllers\graph\graphGenerator.cpp -o CMakeFiles\EDD_P1_202300638.dir\controllers\graph\graphGenerator.cpp.s
+
+CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj: CMakeFiles/EDD_P1_202300638.dir/flags.make
+CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj: C:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/graph/sparseDot.cpp
+CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj: CMakeFiles/EDD_P1_202300638.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj -MF CMakeFiles\EDD_P1_202300638.dir\controllers\graph\sparseDot.cpp.obj.d -o CMakeFiles\EDD_P1_202300638.dir\controllers\graph\sparseDot.cpp.obj -c C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\controllers\graph\sparseDot.cpp
+
+CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\controllers\graph\sparseDot.cpp > CMakeFiles\EDD_P1_202300638.dir\controllers\graph\sparseDot.cpp.i
+
+CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\controllers\graph\sparseDot.cpp -o CMakeFiles\EDD_P1_202300638.dir\controllers\graph\sparseDot.cpp.s
 
 # Object files for target EDD_P1_202300638
 EDD_P1_202300638_OBJECTS = \
@@ -219,7 +233,8 @@ EDD_P1_202300638_OBJECTS = \
 "CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/avl/avlNode.cpp.obj" \
 "CMakeFiles/EDD_P1_202300638.dir/controllers/structs/activeStruct.cpp.obj" \
 "CMakeFiles/EDD_P1_202300638.dir/controllers/structs/userStruct.cpp.obj" \
-"CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.obj"
+"CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj" \
+"CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj"
 
 # External object files for target EDD_P1_202300638
 EDD_P1_202300638_EXTERNAL_OBJECTS =
@@ -233,12 +248,13 @@ EDD_P1_202300638.exe: CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/
 EDD_P1_202300638.exe: CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/avl/avlNode.cpp.obj
 EDD_P1_202300638.exe: CMakeFiles/EDD_P1_202300638.dir/controllers/structs/activeStruct.cpp.obj
 EDD_P1_202300638.exe: CMakeFiles/EDD_P1_202300638.dir/controllers/structs/userStruct.cpp.obj
-EDD_P1_202300638.exe: CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.obj
+EDD_P1_202300638.exe: CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj
+EDD_P1_202300638.exe: CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj
 EDD_P1_202300638.exe: CMakeFiles/EDD_P1_202300638.dir/build.make
 EDD_P1_202300638.exe: CMakeFiles/EDD_P1_202300638.dir/linkLibs.rsp
 EDD_P1_202300638.exe: CMakeFiles/EDD_P1_202300638.dir/objects1.rsp
 EDD_P1_202300638.exe: CMakeFiles/EDD_P1_202300638.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable EDD_P1_202300638.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\HP\Documents\Programacion\c++\EDD_P1_202300638\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable EDD_P1_202300638.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EDD_P1_202300638.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

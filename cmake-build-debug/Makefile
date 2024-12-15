@@ -224,29 +224,53 @@ controllers/functions/functions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/functions/functions.cpp.s
 .PHONY : controllers/functions/functions.cpp.s
 
-controllers/graph/sparseGraph.obj: controllers/graph/sparseGraph.cpp.obj
-.PHONY : controllers/graph/sparseGraph.obj
+controllers/graph/graphGenerator.obj: controllers/graph/graphGenerator.cpp.obj
+.PHONY : controllers/graph/graphGenerator.obj
 
 # target to build an object file
-controllers/graph/sparseGraph.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.obj
-.PHONY : controllers/graph/sparseGraph.cpp.obj
+controllers/graph/graphGenerator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj
+.PHONY : controllers/graph/graphGenerator.cpp.obj
 
-controllers/graph/sparseGraph.i: controllers/graph/sparseGraph.cpp.i
-.PHONY : controllers/graph/sparseGraph.i
+controllers/graph/graphGenerator.i: controllers/graph/graphGenerator.cpp.i
+.PHONY : controllers/graph/graphGenerator.i
 
 # target to preprocess a source file
-controllers/graph/sparseGraph.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.i
-.PHONY : controllers/graph/sparseGraph.cpp.i
+controllers/graph/graphGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.i
+.PHONY : controllers/graph/graphGenerator.cpp.i
 
-controllers/graph/sparseGraph.s: controllers/graph/sparseGraph.cpp.s
-.PHONY : controllers/graph/sparseGraph.s
+controllers/graph/graphGenerator.s: controllers/graph/graphGenerator.cpp.s
+.PHONY : controllers/graph/graphGenerator.s
 
 # target to generate assembly for a file
-controllers/graph/sparseGraph.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseGraph.cpp.s
-.PHONY : controllers/graph/sparseGraph.cpp.s
+controllers/graph/graphGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.s
+.PHONY : controllers/graph/graphGenerator.cpp.s
+
+controllers/graph/sparseDot.obj: controllers/graph/sparseDot.cpp.obj
+.PHONY : controllers/graph/sparseDot.obj
+
+# target to build an object file
+controllers/graph/sparseDot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj
+.PHONY : controllers/graph/sparseDot.cpp.obj
+
+controllers/graph/sparseDot.i: controllers/graph/sparseDot.cpp.i
+.PHONY : controllers/graph/sparseDot.i
+
+# target to preprocess a source file
+controllers/graph/sparseDot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.i
+.PHONY : controllers/graph/sparseDot.cpp.i
+
+controllers/graph/sparseDot.s: controllers/graph/sparseDot.cpp.s
+.PHONY : controllers/graph/sparseDot.s
+
+# target to generate assembly for a file
+controllers/graph/sparseDot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.s
+.PHONY : controllers/graph/sparseDot.cpp.s
 
 controllers/nodes/avl/avlNode.obj: controllers/nodes/avl/avlNode.cpp.obj
 .PHONY : controllers/nodes/avl/avlNode.obj
@@ -389,9 +413,12 @@ help:
 	@echo ... controllers/functions/functions.obj
 	@echo ... controllers/functions/functions.i
 	@echo ... controllers/functions/functions.s
-	@echo ... controllers/graph/sparseGraph.obj
-	@echo ... controllers/graph/sparseGraph.i
-	@echo ... controllers/graph/sparseGraph.s
+	@echo ... controllers/graph/graphGenerator.obj
+	@echo ... controllers/graph/graphGenerator.i
+	@echo ... controllers/graph/graphGenerator.s
+	@echo ... controllers/graph/sparseDot.obj
+	@echo ... controllers/graph/sparseDot.i
+	@echo ... controllers/graph/sparseDot.s
 	@echo ... controllers/nodes/avl/avlNode.obj
 	@echo ... controllers/nodes/avl/avlNode.i
 	@echo ... controllers/nodes/avl/avlNode.s
