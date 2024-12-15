@@ -10,6 +10,16 @@ add_executable(EDD_P1_202300638 main.cpp
         controllers/dataStructure/sparseMatrix/sparseMatrix.cpp
         controllers/nodes/disperseMatrix/nodeMatrix.h
         controllers/nodes/disperseMatrix/nodeMatrix.cpp
-        controllers/functions/toLowerCase.h
-        controllers/functions/toLowerCase.cpp
+        controllers/functions/functions.h
+        controllers/functions/functions.cpp
+        controllers/dataStructure/avlTree/avlTree.h
+        controllers/dataStructure/avlTree/avlTree.cpp
+        controllers/nodes/avl/avlNode.h
+        controllers/nodes/avl/avlNode.cpp
+        controllers/structs/activeStruct.h
+        controllers/structs/activeStruct.cpp
+        controllers/structs/userStruct.cpp
+        controllers/structs/userStruct.h
+        controllers/graph/sparseGraph.h
+        controllers/graph/sparseGraph.cpp
 )

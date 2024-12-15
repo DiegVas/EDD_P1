@@ -1,11 +1,13 @@
 # ninja log v6
-10	1794	7558087209290401	CMakeFiles/EDD_P1_202300638.dir/main.cpp.obj	9533d5ceebba893f
-1516	1896	7558087360410722	EDD_P1_202300638.exe	3095c578f52eb4e7
+9	974	7559403930156911	CMakeFiles/EDD_P1_202300638.dir/main.cpp.obj	9533d5ceebba893f
+674	919	7559411486121988	EDD_P1_202300638.exe	e31ad3a557841727
 11	941	7556077728472709	CMakeFiles/EDD_P1_202300638.dir/controllers/functions/toLowerCase.cpp.obj	a8cacb66c78427e5
 29	1248	7551702156550942	CMakeFiles/EDD_P1_202300638.dir/admin.cpp.obj	6556753cdce0858c
 14	1635	7557577670152453	CMakeFiles/EDD_P1_202300638.dir/controllers/sparseMatrix.cpp.obj	f252630d587cb9b0
 29	1177	7556883917307866	CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/nodeMatrix.cpp.obj	9090ba5e35fd6cd7
 192	1531	7553427717599837	CMakeFiles/EDD_P1_202300638.dir/content/admin/admin.cpp.obj	69189cc18b387f76
-5	729	7559296330425892	build.ninja	8965bf1012b5f1dc
+5	351	7559442916326763	build.ninja	8965bf1012b5f1dc
 17	1524	7558086946551672	CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/sparseMatrix/sparseMatrix.cpp.obj	e7e35bbc58355bb6
 10	1515	7558087345358749	CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/disperseMatrix/nodeMatrix.cpp.obj	c8d1498cbb42c000
+11	673	7559411479486083	CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/avlTree/avlTree.cpp.obj	9029861e6f251c57
+9	104	7559404522933838	CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/avl/avlNode.cpp.obj	6f85fc0cdc6e58b

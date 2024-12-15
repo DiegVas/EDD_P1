@@ -34,7 +34,7 @@ public:
     nodeMatrix* insertHeaderV(std::string value);
 
     // ? Metodo para insertar un nodo en la matriz dispersa
-    int insertHeaders(std::string value, userStruct User, std::string headerH, std::string headerV);
+    int insertHeaders(userStruct& user);
 
     // ? Solo si en algun caso esta al final de una cabezera horizontal y vertical
     static void insertFinal(nodeMatrix* value, nodeMatrix* headerH, nodeMatrix* headerV);
@@ -64,6 +64,8 @@ public:
 
     // ? Metdo para insertar atras de un nodo
     static int insertBehind(nodeMatrix* newNode, nodeMatrix* firstNode);
+
+    nodeMatrix* searchNode(const userStruct& user);
 };
 
 

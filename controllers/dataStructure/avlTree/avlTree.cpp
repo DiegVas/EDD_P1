@@ -6,8 +6,8 @@ avlTree::avlTree() {
     this->root = nullptr;
 }
 
-void avlTree::insert(int value){
-	avlNode *newNode = new avlNode(value);
+void avlTree::insert(activeStruct &activeValue){
+	avlNode *newNode = new avlNode(activeValue);
     insertNode(newNode, root);
 
 };
@@ -29,9 +29,9 @@ void avlTree::insertNode(avlNode *newNode, avlNode *&rootNode) {
 
       if(rootNode->balanceF > 1){
         if(rootNode->right->balanceF < 0){
-          return rotateRightLeft(rootNode);
+          return rotateLeftRight(rootNode);
         }else{
-            return rotateLeft(rootNode);
+            return rotateRight(rootNode);
         }
 
     }
@@ -39,11 +39,11 @@ void avlTree::insertNode(avlNode *newNode, avlNode *&rootNode) {
     if(rootNode->balanceF < -1){
         if(rootNode->left->balanceF > 0)
         {
-          return rotateLeftRight(rootNode);
+          return rotateRightLeft(rootNode);
         }
          else
         {
-                return rotateRight(rootNode);
+                return rotateLeft(rootNode);
         }
     }
 
@@ -54,7 +54,11 @@ void avlTree::insertNode(avlNode *newNode, avlNode *&rootNode) {
 int avlTree::maxHeigth(avlNode *node) {
     if (node == nullptr) return 0;
 
-    return 1 + std::max(maxHeigth(node->left), maxHeigth(node->right));
+    int left = maxHeigth(node->left);
+    int right = maxHeigth(node->right);
+
+    return left > right ? left + 1 : right + 1;
+//    return 1 + std::max(maxHeigth(node->left), maxHeigth(node->right));
 };
 
 int avlTree::balanceFactor(avlNode *node) {
@@ -106,11 +110,11 @@ avlNode *avlTree::minValueNode(avlNode* &node) {
     return current;
 };
 
-void avlTree::deleteNode(int value) {
-    deleteNode(root, value);
+void avlTree::deleteNode(std::string id) {
+    deleteNode(root, id);
 };
 
-void avlTree::deleteNode(avlNode *&node, int value) {
+void avlTree::deleteNode(avlNode*& node, std::string value) {
   // ! No existe el valor
     if (node == nullptr) return;
 
@@ -161,4 +165,40 @@ void avlTree::deleteNode(avlNode *&node, int value) {
 
 bool avlTree::isSheet(avlNode *node) {
     return node->left == nullptr && node->right == nullptr;
+};
+
+void avlTree::getNode(std::string id) {
+    avlNode *current = root;
+
+    while (current != nullptr) {
+        if (current->valor == id) {
+            // ! se encontro el nodo
+            return;
+        }
+
+        if (id < current->valor) {
+            current = current->left;
+        } else {
+            current = current->right;
+        }
+    }
+    // ! No se encontro el nodo
+};
+
+void avlTree::setterNode(std::string id, activeStruct newValue) {
+    avlNode *current = root;
+
+    while (current != nullptr) {
+        if (current->valor == id) {
+            current->valor = newValue.id;
+            return;
+        }
+
+        if (newValue.id < current->valor) {
+            current = current->left;
+        } else {
+            current = current->right;
+        }
+    }
+    // ! No se encontro el nodo
 };

@@ -9,6 +9,7 @@ class nodeMatrix
 {
 public:
     std::string userName;
+
     userStruct* user;
 
     nodeMatrix* front;
@@ -20,7 +21,8 @@ public:
     nodeMatrix* next;
     nodeMatrix* prev;
 
-    explicit nodeMatrix(std::string userName);
+    nodeMatrix(const std::string userName);
+    nodeMatrix(userStruct* user);
 };
 
 #endif //NODEMATRIX_H

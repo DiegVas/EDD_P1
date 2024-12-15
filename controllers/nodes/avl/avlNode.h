@@ -1,19 +1,19 @@
-//
-// Created by HP on 12/12/2024.
-//
+
 
 #ifndef AVLNODE_H
 #define AVLNODE_H
+#include "../../structs/activeStruct.h"
 
 
 class avlNode {
 
   public:
-    int valor;
+    std::string valor;
     int balanceF;
     avlNode *left;
     avlNode *right;
-    avlNode(int valor);
+    activeStruct active;
+    avlNode(activeStruct &activeValue);
 };
 
 #endif //AVLNODE_H

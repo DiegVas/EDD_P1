@@ -6,16 +6,19 @@
 #ifndef USUARIO_H
 #define USUARIO_H
 
-#include <string>
+#include "../dataStructure/avlTree/avlTree.h"
 
 struct userStruct {
+public:
     std::string userName;
     std::string fullName;
     std::string password;
-    // AVL tree activos
-    // Lista circular de transacciones
+    std::string company;
+    std::string country;
 
-    void imprimirInfo() const;
+    // ? AVL tree activos
+    avlTree *actives;
+    userStruct(std::string userName, std::string fullName, std::string password, std::string company, std::string country);
 };
 
 #endif // USUARIO_H

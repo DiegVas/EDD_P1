@@ -1,10 +1,9 @@
 
-#include "sparseMatrix.h"
 
 #include <iostream>
-
 #include "../../nodes/disperseMatrix/nodeMatrix.h"
-#include "../../functions/toLowerCase.h"
+#include "../../functions/functions.h"
+#include "sparseMatrix.h"
 
 sparse_Matrix::sparse_Matrix()
 {
@@ -101,45 +100,44 @@ nodeMatrix* sparse_Matrix::insertHeaderV(std::string value)
     return newNode;
 }
 
-int sparse_Matrix::insertHeaders(std::string value, userStruct User, std::string headerH, std::string headerV)
+int sparse_Matrix::insertHeaders(userStruct &user)
 {
-    value = toLowerCase(value);
-    headerH = toLowerCase(headerH);
-    headerV = toLowerCase(headerV);
+    std::string company = user.company;
+    std::string country = user.country;
 
     nodeMatrix* headH = nullptr;
     nodeMatrix* headV = nullptr;
 
-    nodeMatrix* newUser = new nodeMatrix(value);
-    newUser->user = &User;
+    nodeMatrix* newUser = new nodeMatrix(&user);
+    newUser->user = &user;
 
     if (isEmpy())
     {
-        headH = insertHeaderH(headerH);
-        headV = insertHeaderV(headerV);
+        headH = insertHeaderH(country);
+        headV = insertHeaderV(company);
         insertFinal(newUser, headH, headV);
         return 0;
     }
 
-    headH = getHeaderH(headerH);
-    headV = getHeaderV(headerV);
+    headH = getHeaderH(country);
+    headV = getHeaderV(company);
 
     if (headH == nullptr && headV == nullptr)
     {
-        headH = insertHeaderH(headerH);
-        headV = insertHeaderV(headerV);
+        headH = insertHeaderH(country);
+        headV = insertHeaderV(company);
         insertFinal(newUser, headH, headV);
         return 0;
     }
     else if (headH == nullptr)
     {
-        headH = insertHeaderH(headerH);
+        headH = insertHeaderH(country);
         insertFinal(newUser, headH, headV);
         return 0;
     }
     else if (headV == nullptr)
     {
-        headV = insertHeaderV(headerV);
+        headV = insertHeaderV(company);
         insertFinal(newUser, headH, headV);
         return 0;
     }
@@ -158,7 +156,7 @@ int sparse_Matrix::insertHeaders(std::string value, userStruct User, std::string
     while (auxH != nullptr)
     {
         userHeadV = findHeaderV(auxH);
-        down = moreDown(userHeadV, headerV);
+        down = moreDown(userHeadV, company);
 
         if (!down) break;
         auxH = auxH->down;
@@ -173,7 +171,7 @@ int sparse_Matrix::insertHeaders(std::string value, userStruct User, std::string
     while (auxV != nullptr)
     {
         userHeadH = findHeaderH(auxV);
-        right = moreRight(userHeadH, headerH);
+        right = moreRight(userHeadH, country);
 
         if (!right) break;
 
@@ -305,4 +303,33 @@ int sparse_Matrix::insertBehind(nodeMatrix* newNode, nodeMatrix* firstNode)
     newNode->front = aux;
     aux->behind = newNode;
     return 0;
+}
+
+nodeMatrix* sparse_Matrix::searchNode(const userStruct& user){
+    nodeMatrix* auxH = headerH;
+    nodeMatrix* auxV = headerV;
+    auxH = getHeaderH(user.country);
+    if (auxH == nullptr) return nullptr;
+    auxV = getHeaderV(user.company);
+    if (auxV == nullptr) return nullptr;
+
+
+    while (auxH != nullptr)
+    {
+        if (findHeaderV(auxH)->userName == auxV->userName)
+        {
+            while (auxH != nullptr)
+            {
+                if (auxH->userName == user.userName && auxH->user->password == user.password)
+                {
+                    return auxH;
+                }
+                auxH = auxH->behind;
+            }
+            return nullptr;
+        }
+        auxH = auxH->down;
+    }
+
+    return nullptr;
 }

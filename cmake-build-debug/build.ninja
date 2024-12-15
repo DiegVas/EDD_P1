@@ -79,6 +79,24 @@ build CMakeFiles/EDD_P1_202300638.dir/controllers/functions/toLowerCase.cpp.obj:
   OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
   OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\functions
 
+build CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/avlTree/avlTree.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/dataStructure/avlTree/avlTree.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\dataStructure\avlTree\avlTree.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
+  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\dataStructure\avlTree
+
+build CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/avl/avlNode.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/nodes/avl/avlNode.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\nodes\avl\avlNode.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
+  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\nodes\avl
+
+build CMakeFiles/EDD_P1_202300638.dir/controllers/structs/activeStruct.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/structs/activeStruct.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\structs\activeStruct.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
+  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\structs
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target EDD_P1_202300638
@@ -87,7 +105,7 @@ build CMakeFiles/EDD_P1_202300638.dir/controllers/functions/toLowerCase.cpp.obj:
 #############################################
 # Link the executable EDD_P1_202300638.exe
 
-build EDD_P1_202300638.exe: CXX_EXECUTABLE_LINKER__EDD_P1_202300638_Debug CMakeFiles/EDD_P1_202300638.dir/main.cpp.obj CMakeFiles/EDD_P1_202300638.dir/content/admin/admin.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/sparseMatrix/sparseMatrix.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/disperseMatrix/nodeMatrix.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/functions/toLowerCase.cpp.obj
+build EDD_P1_202300638.exe: CXX_EXECUTABLE_LINKER__EDD_P1_202300638_Debug CMakeFiles/EDD_P1_202300638.dir/main.cpp.obj CMakeFiles/EDD_P1_202300638.dir/content/admin/admin.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/sparseMatrix/sparseMatrix.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/disperseMatrix/nodeMatrix.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/functions/toLowerCase.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/avlTree/avlTree.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/avl/avlNode.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/structs/activeStruct.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir

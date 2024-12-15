@@ -4,5 +4,6 @@
 #include <string>
 
 std::string toLowerCase(const std::string &input);
+std::string generateRandomId();
 
 #endif // TOLOWERCASE_H

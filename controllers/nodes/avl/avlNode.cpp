@@ -1,18 +1,11 @@
 #include "avlNode.h"
+#include "../../structs/activeStruct.h"
 
-avlNode::avlNode(int valor) {
-//    this->id = id;
-//    this->name = name;
-//    this->description = description;
-//    this->amount = amount;
-//    this->price = price;
-//    this->left = nullptr;
-//    this->right = nullptr;
-//    this->height = 1;
-
-    this->valor = valor;
+avlNode::avlNode(activeStruct &activeValue): active(activeValue)
+{
+    this->active = activeValue;
+    this->valor = activeValue.id;
     this->balanceF = 0;
     this->left = nullptr;
     this->right = nullptr;
-
-};
+}

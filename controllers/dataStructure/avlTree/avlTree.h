@@ -2,14 +2,18 @@
 #ifndef AVLTREE_H
 #define AVLTREE_H
 #include "../../nodes/avl/avlNode.h"
+#include "../../structs/activeStruct.h"
 
 
 class avlTree{
 
 public:
     avlNode *root;
-    void insert(int value);
-    void deleteNode(int value);
+
+    void insert(activeStruct& activeValue);
+    void deleteNode(std::string id);
+    void getNode(std::string id);
+    void setterNode(std::string id, activeStruct newValue);
     avlTree();
 
 private:
@@ -38,11 +42,12 @@ private:
     void rotateLeftRight(avlNode *&node);
 
     // ? Metodo para eliminar un nodo
-    void deleteNode(avlNode *&node, int value);
+    void deleteNode(avlNode *&node, std::string value);
 
     avlNode *minValueNode(avlNode* &node);
 
     bool isSheet(avlNode *node);
+
 
 
 
