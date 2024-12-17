@@ -30,13 +30,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="849f61cb-14e6-40ad-b4c2-898c98dbaecf" name="Changes" comment="Correccion de error">
+    <list default="true" id="849f61cb-14e6-40ad-b4c2-898c98dbaecf" name="Changes" comment="Correccion de errores">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/content/userMenu/userMenu.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/content/userMenu/userMenu.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/EDD_P1_202300638.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/EDD_P1_202300638.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/userMenu/userMenu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/content/userMenu/userMenu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +118,7 @@
       <updated>1734427581270</updated>
       <workItem from="1734427584207" duration="2836000" />
       <workItem from="1734443986337" duration="404000" />
-      <workItem from="1734449717878" duration="4469000" />
+      <workItem from="1734449717878" duration="4673000" />
     </task>
     <task id="LOCAL-00001" summary="Etapa Final del proyecto">
       <option name="closed" value="true" />
@@ -156,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734454153522</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Correccion de errores">
+      <option name="closed" value="true" />
+      <created>1734454621299</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734454621299</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +177,8 @@
     <MESSAGE value="Subida de usuarios quemados" />
     <MESSAGE value="Subida de archivos para calificacion" />
     <MESSAGE value="Correccion de error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correccion de error" />
+    <MESSAGE value="Correccion de errores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correccion de errores" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
