@@ -8,7 +8,7 @@ void idsPrintTree(avlNode *node, bool isAvailablePrint = true) {
     if (node == nullptr) return;
 
     // Procesa el nodo actual
-    if (node->active->isAvailable == isAvailablePrint) std::cout << "ID: " << node->valor << "; Nombre: " << node->active->name << std::endl;
+    if (node->active->isAvailable == isAvailablePrint) std::cout << "ID: " << node->valor << "; Nombre: " << node->active->name << "; Descripcion: " << node->active->description << std::endl;
 
     // Recorre el subárbol izquierdo
     idsPrintTree(node->left);
@@ -117,7 +117,7 @@ void rentActive(linkedList *activeList, userStruct *user, CircularLinkedList *ci
     nodeLinked *aux = activeList->head;
     while (aux != nullptr)
     {
-        if (aux->active->isAvailable) std::cout << "ID: " << aux->active->id << "; Nombre: " << aux->active->name << std::endl;
+        if (aux->active->isAvailable) std::cout << "ID: " << aux->active->id << "; Nombre: " << aux->active->name << "; Descripcion: " << aux->active->description << std::endl;
         aux = aux->next;
     }
 

@@ -1,8 +1,6 @@
 digraph G {
   rankdir=LR;
   node [shape=circle];
-  e9LV5MyxlqCoOs5 [label="rt"];
-  e9LV5MyxlqCoOs5 -> pYiLhFB00nXPn6h;
-  pYiLhFB00nXPn6h [label="rt"];
-  pYiLhFB00nXPn6h -> e9LV5MyxlqCoOs5;
+  i5LXR7q1B4HXgq3 [label="activo1"];
+  i5LXR7q1B4HXgq3 -> i5LXR7q1B4HXgq3;
 }
