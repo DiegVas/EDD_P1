@@ -7,10 +7,11 @@ void show_Menu();
 
 void login(sparse_Matrix *userMatrix, linkedList *activeList);
 
-
 // TODO : Credenciales de usuario admin
 const std::string ADMIN_USER = "admin";
 const std::string ADMIN_PASS = "admin";
+
+
 
 int main()
 {
@@ -19,21 +20,30 @@ int main()
     sparse_Matrix sparseMatrix = sparse_Matrix();
 
     // ! Usuarios y activos quemados
-    userStruct userTest = userStruct("test", "Usuario completo", "123", "max", "gua");
-    userStruct userTest1 = userStruct("test1", "Usuario completo 1", "123", "max", "gua");
-    userStruct userTest2 = userStruct("test2", "Usuario completo 2", "123", "max", "distelsa");
+   // userStruct userTest = userStruct("elian_estrada", "Usuario completo", "", "", "");
+    userStruct users[] = {
+        {"elian_estrada", "Elian Estrada", "1234", "igss", "guatemala"},
+        {"juanito", "Juan Perez", "4567", "max", "jutiapa"},
+        {"pedrito", "Pedro Rodriguez", "48956", "usac", "jalapa"},
+        {"mafer", "Maria Fernanda", "54312", "cinepolis", "peten"},
+        {"juanma", "Juan Manuel", "32897", "usac", "guatemala"},
+        {"casimiro", "Carlos Perez", "721896", "max", "guatemala"},
+        {"fuego03", "Fernando Mendez", "891346", "cinepolis", "jutiapa"},
+        {"azurdia", "Alejandra Guzman", "780145", "usac", "jutiapa"},
+        {"incrediboy", "Iraldo Martinez", "201598", "max", "jutiapa"},
+        {"alcachofa", "Antonio Lopez", "20435", "usac", "jalapa"}
+    };
+
+    for (auto &user : users) {
+        sparseMatrix.insertHeaders(user);
+    }
 
     // ! Activos quemados
-    activeStruct activeTest = activeStruct("Activo 1", "Activo de prueba", userTest.userName);
-    activeStruct actoveTest1 = activeStruct("activo2", "activo prueba", userTest1.userName);
-    activeStruct activeTest2 = activeStruct("activo3", "activo prueba", userTest2.userName);
+    //activeStruct activeTest = activeStruct("Activo 1", "Activo de prueba", userTest.userName);
 
-    userTest.actives->insert(&activeTest, &activeList);
-    userTest1.actives->insert(&actoveTest1, &activeList);
-    userTest2.actives->insert(&activeTest2, &activeList);
-    sparseMatrix.insertHeaders(userTest);
-    sparseMatrix.insertHeaders(userTest1);
-    sparseMatrix.insertHeaders(userTest2);
+
+    //userTest.actives->insert(&activeTest, &activeList);
+
 
      do {
          show_Menu();

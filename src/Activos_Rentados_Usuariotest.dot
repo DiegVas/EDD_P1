@@ -1,4 +1,0 @@
-digraph LinkedList {
-    node [shape=record];
-    "0x1c6dfc16340" [label="{activo2}"];
-}

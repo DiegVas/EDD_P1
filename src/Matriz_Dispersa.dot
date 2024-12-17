@@ -1,0 +1,77 @@
+digraph G {
+label="Reporte de matriz dispersa"labelloc="t"    node [shape=box width=1.2 style=filled fillcolor="#85A98F" color=transparent ];
+A0 [label="admin" group=0 ]
+A0 -> guatemala;
+A0 -> igss;
+/*------------------- Cabeceras horizontales -------------------*/
+guatemala [label="guatemala" group=1 ];
+jutiapa [label="jutiapa" group=2 ];
+jalapa [label="jalapa" group=3 ];
+peten [label="peten" group=4 ];
+/*------------------- Cabeceras verticales -------------------*/
+igss [label="igss" group=0 ];
+max [label="max" group=0 ];
+usac [label="usac" group=0 ];
+cinepolis [label="cinepolis" group=0 ];
+/*------------------- Columnas -------------------*/
+igss_guatemala [label="elian_estrada" group=1 ];
+max_guatemala [label="casimiro" group=1 ];
+usac_guatemala [label="juanma" group=1 ];
+max_jutiapa [label="juanito" group=2 ];
+usac_jutiapa [label="azurdia" group=2 ];
+cinepolis_jutiapa [label="fuego03" group=2 ];
+usac_jalapa [label="pedrito" group=3 ];
+cinepolis_peten [label="mafer" group=4 ];
+/*------------------- Enlaces horizontales -------------------*/
+guatemala -> jutiapa;
+jutiapa -> jalapa;
+jalapa -> peten;
+peten -> jalapa;
+jalapa -> jutiapa;
+jutiapa -> guatemala;
+igss -> igss_guatemala;
+igss_guatemala -> igss;
+max -> max_guatemala;
+max_guatemala -> max_jutiapa;
+max_jutiapa -> max_guatemala;
+max_guatemala -> max;
+usac -> usac_guatemala;
+usac_guatemala -> usac_jutiapa;
+usac_jutiapa -> usac_jalapa;
+usac_jalapa -> usac_jutiapa;
+usac_jutiapa -> usac_guatemala;
+usac_guatemala -> usac;
+cinepolis -> cinepolis_jutiapa;
+cinepolis_jutiapa -> cinepolis_peten;
+cinepolis_peten -> cinepolis_jutiapa;
+cinepolis_jutiapa -> cinepolis;
+/*------------------- Enlaces verticales -------------------*/
+igss -> max;
+max -> usac;
+usac -> cinepolis;
+cinepolis -> usac;
+usac -> max;
+max -> igss;
+guatemala -> igss_guatemala;
+igss_guatemala -> max_guatemala;
+max_guatemala -> usac_guatemala;
+usac_guatemala -> max_guatemala;
+max_guatemala -> igss_guatemala;
+igss_guatemala -> guatemala;
+jutiapa -> max_jutiapa;
+max_jutiapa -> usac_jutiapa;
+usac_jutiapa -> cinepolis_jutiapa;
+cinepolis_jutiapa -> usac_jutiapa;
+usac_jutiapa -> max_jutiapa;
+max_jutiapa -> jutiapa;
+jalapa -> usac_jalapa;
+usac_jalapa -> jalapa;
+peten -> cinepolis_peten;
+cinepolis_peten -> peten;
+/*------------------- Encuadre -------------------*/
+{ rank=same; A0;guatemala;jutiapa;jalapa;peten;}
+{ rank=same; igss;igss_guatemala;}
+{ rank=same; max;max_guatemala;max_jutiapa;}
+{ rank=same; usac;usac_guatemala;usac_jutiapa;usac_jalapa;}
+{ rank=same; cinepolis;cinepolis_jutiapa;cinepolis_peten;}
+}

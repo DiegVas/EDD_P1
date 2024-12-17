@@ -26,91 +26,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="849f61cb-14e6-40ad-b4c2-898c98dbaecf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/content/userMenu/userMenu.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/userMenu/userMenu.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/dataStructure/linkedList/linkedList.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/dataStructure/linkedList/linkedList.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/graph/linkedDot.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/graph/linkedDot.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/nodes/linkedList/nodeLinked.h" afterDir="false" />
+    <list default="true" id="849f61cb-14e6-40ad-b4c2-898c98dbaecf" name="Changes" comment="Etapa Final del proyecto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-8ad5d9ea92f908c8e7e7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-7c4a4e02a43b87057ffe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-12-15T09-48-14-0856.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-EDD_P1_202300638-Debug-92bfe5bf45dc2dee219d.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/compiler_depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/compiler_depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/compiler_depend.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/content/admin/admin.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/content/admin/admin.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/content/admin/admin.cpp.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/avlTree/avlTree.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/avlTree/avlTree.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/avlTree/avlTree.cpp.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/sparseMatrix/sparseMatrix.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/sparseMatrix/sparseMatrix.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/sparseMatrix/sparseMatrix.cpp.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/functions/functions.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/functions/functions.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/functions/functions.cpp.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/avl/avlNode.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/avl/avlNode.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/avl/avlNode.cpp.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/disperseMatrix/nodeMatrix.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/disperseMatrix/nodeMatrix.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/disperseMatrix/nodeMatrix.cpp.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/structs/activeStruct.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/structs/activeStruct.cpp.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/structs/userStruct.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/controllers/structs/userStruct.cpp.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/linkLibs.rsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/main.cpp.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/objects.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/objects1.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/EDD_P1_202300638.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/EDD_P1_202300638.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/EDD_P1_202300638.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/admin/admin.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/content/admin/admin.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/dataStructure/avlTree/avlTree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/dataStructure/avlTree/avlTree.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/dataStructure/avlTree/avlTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/dataStructure/avlTree/avlTree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/dataStructure/sparseMatrix/sparseMatrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/dataStructure/sparseMatrix/sparseMatrix.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/dataStructure/sparseMatrix/sparseMatrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/dataStructure/sparseMatrix/sparseMatrix.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/graph/graphGenerator.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/graph/graphGenerator.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/graph/sparseDot.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/graph/sparseDot.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/nodes/avl/avlNode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/nodes/avl/avlNode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/nodes/avl/avlNode.h" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/nodes/avl/avlNode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/nodes/disperseMatrix/nodeMatrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/nodes/disperseMatrix/nodeMatrix.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/nodes/disperseMatrix/nodeMatrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/nodes/disperseMatrix/nodeMatrix.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/structs/activeStruct.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/structs/actives/activeStruct.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/structs/activeStruct.h" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/structs/actives/activeStruct.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/structs/userStruct.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/structs/user/userStruct.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/structs/userStruct.h" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/structs/user/userStruct.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +70,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "CMake Application.EDD_P1_202300638.executor": "Debug",
+    "CMake Application.EDD_P1_202300638.executor": "Run",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -187,8 +109,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1734427581270</updated>
-      <workItem from="1734427584207" duration="2051000" />
+      <workItem from="1734427584207" duration="2752000" />
     </task>
+    <task id="LOCAL-00001" summary="Etapa Final del proyecto">
+      <option name="closed" value="true" />
+      <created>1734429731111</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734429731111</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,5 +129,10 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="intento de codigo para graficar la matris dispersa" />
+    <MESSAGE value="Etapa Final del proyecto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Etapa Final del proyecto" />
   </component>
 </project>
