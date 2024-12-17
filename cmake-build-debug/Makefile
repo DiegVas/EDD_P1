@@ -272,77 +272,125 @@ controllers/functions/functions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/functions/functions.cpp.s
 .PHONY : controllers/functions/functions.cpp.s
 
-controllers/graph/avl/avlDot.obj: controllers/graph/avl/avlDot.cpp.obj
-.PHONY : controllers/graph/avl/avlDot.obj
+controllers/graph/avlDot.obj: controllers/graph/avlDot.cpp.obj
+.PHONY : controllers/graph/avlDot.obj
 
 # target to build an object file
-controllers/graph/avl/avlDot.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/avl/avlDot.cpp.obj
-.PHONY : controllers/graph/avl/avlDot.cpp.obj
+controllers/graph/avlDot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/avlDot.cpp.obj
+.PHONY : controllers/graph/avlDot.cpp.obj
 
-controllers/graph/avl/avlDot.i: controllers/graph/avl/avlDot.cpp.i
-.PHONY : controllers/graph/avl/avlDot.i
+controllers/graph/avlDot.i: controllers/graph/avlDot.cpp.i
+.PHONY : controllers/graph/avlDot.i
 
 # target to preprocess a source file
-controllers/graph/avl/avlDot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/avl/avlDot.cpp.i
-.PHONY : controllers/graph/avl/avlDot.cpp.i
+controllers/graph/avlDot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/avlDot.cpp.i
+.PHONY : controllers/graph/avlDot.cpp.i
 
-controllers/graph/avl/avlDot.s: controllers/graph/avl/avlDot.cpp.s
-.PHONY : controllers/graph/avl/avlDot.s
+controllers/graph/avlDot.s: controllers/graph/avlDot.cpp.s
+.PHONY : controllers/graph/avlDot.s
 
 # target to generate assembly for a file
-controllers/graph/avl/avlDot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/avl/avlDot.cpp.s
-.PHONY : controllers/graph/avl/avlDot.cpp.s
+controllers/graph/avlDot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/avlDot.cpp.s
+.PHONY : controllers/graph/avlDot.cpp.s
 
-controllers/graph/generator/graphGenerator.obj: controllers/graph/generator/graphGenerator.cpp.obj
-.PHONY : controllers/graph/generator/graphGenerator.obj
+controllers/graph/circularDot.obj: controllers/graph/circularDot.cpp.obj
+.PHONY : controllers/graph/circularDot.obj
 
 # target to build an object file
-controllers/graph/generator/graphGenerator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/generator/graphGenerator.cpp.obj
-.PHONY : controllers/graph/generator/graphGenerator.cpp.obj
+controllers/graph/circularDot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/circularDot.cpp.obj
+.PHONY : controllers/graph/circularDot.cpp.obj
 
-controllers/graph/generator/graphGenerator.i: controllers/graph/generator/graphGenerator.cpp.i
-.PHONY : controllers/graph/generator/graphGenerator.i
+controllers/graph/circularDot.i: controllers/graph/circularDot.cpp.i
+.PHONY : controllers/graph/circularDot.i
 
 # target to preprocess a source file
-controllers/graph/generator/graphGenerator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/generator/graphGenerator.cpp.i
-.PHONY : controllers/graph/generator/graphGenerator.cpp.i
+controllers/graph/circularDot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/circularDot.cpp.i
+.PHONY : controllers/graph/circularDot.cpp.i
 
-controllers/graph/generator/graphGenerator.s: controllers/graph/generator/graphGenerator.cpp.s
-.PHONY : controllers/graph/generator/graphGenerator.s
+controllers/graph/circularDot.s: controllers/graph/circularDot.cpp.s
+.PHONY : controllers/graph/circularDot.s
 
 # target to generate assembly for a file
-controllers/graph/generator/graphGenerator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/generator/graphGenerator.cpp.s
-.PHONY : controllers/graph/generator/graphGenerator.cpp.s
+controllers/graph/circularDot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/circularDot.cpp.s
+.PHONY : controllers/graph/circularDot.cpp.s
 
-controllers/graph/sparse/sparseDot.obj: controllers/graph/sparse/sparseDot.cpp.obj
-.PHONY : controllers/graph/sparse/sparseDot.obj
+controllers/graph/graphGenerator.obj: controllers/graph/graphGenerator.cpp.obj
+.PHONY : controllers/graph/graphGenerator.obj
 
 # target to build an object file
-controllers/graph/sparse/sparseDot.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparse/sparseDot.cpp.obj
-.PHONY : controllers/graph/sparse/sparseDot.cpp.obj
+controllers/graph/graphGenerator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj
+.PHONY : controllers/graph/graphGenerator.cpp.obj
 
-controllers/graph/sparse/sparseDot.i: controllers/graph/sparse/sparseDot.cpp.i
-.PHONY : controllers/graph/sparse/sparseDot.i
+controllers/graph/graphGenerator.i: controllers/graph/graphGenerator.cpp.i
+.PHONY : controllers/graph/graphGenerator.i
 
 # target to preprocess a source file
-controllers/graph/sparse/sparseDot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparse/sparseDot.cpp.i
-.PHONY : controllers/graph/sparse/sparseDot.cpp.i
+controllers/graph/graphGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.i
+.PHONY : controllers/graph/graphGenerator.cpp.i
 
-controllers/graph/sparse/sparseDot.s: controllers/graph/sparse/sparseDot.cpp.s
-.PHONY : controllers/graph/sparse/sparseDot.s
+controllers/graph/graphGenerator.s: controllers/graph/graphGenerator.cpp.s
+.PHONY : controllers/graph/graphGenerator.s
 
 # target to generate assembly for a file
-controllers/graph/sparse/sparseDot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparse/sparseDot.cpp.s
-.PHONY : controllers/graph/sparse/sparseDot.cpp.s
+controllers/graph/graphGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.s
+.PHONY : controllers/graph/graphGenerator.cpp.s
+
+controllers/graph/linkedDot.obj: controllers/graph/linkedDot.cpp.obj
+.PHONY : controllers/graph/linkedDot.obj
+
+# target to build an object file
+controllers/graph/linkedDot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/linkedDot.cpp.obj
+.PHONY : controllers/graph/linkedDot.cpp.obj
+
+controllers/graph/linkedDot.i: controllers/graph/linkedDot.cpp.i
+.PHONY : controllers/graph/linkedDot.i
+
+# target to preprocess a source file
+controllers/graph/linkedDot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/linkedDot.cpp.i
+.PHONY : controllers/graph/linkedDot.cpp.i
+
+controllers/graph/linkedDot.s: controllers/graph/linkedDot.cpp.s
+.PHONY : controllers/graph/linkedDot.s
+
+# target to generate assembly for a file
+controllers/graph/linkedDot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/linkedDot.cpp.s
+.PHONY : controllers/graph/linkedDot.cpp.s
+
+controllers/graph/sparseDot.obj: controllers/graph/sparseDot.cpp.obj
+.PHONY : controllers/graph/sparseDot.obj
+
+# target to build an object file
+controllers/graph/sparseDot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj
+.PHONY : controllers/graph/sparseDot.cpp.obj
+
+controllers/graph/sparseDot.i: controllers/graph/sparseDot.cpp.i
+.PHONY : controllers/graph/sparseDot.i
+
+# target to preprocess a source file
+controllers/graph/sparseDot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.i
+.PHONY : controllers/graph/sparseDot.cpp.i
+
+controllers/graph/sparseDot.s: controllers/graph/sparseDot.cpp.s
+.PHONY : controllers/graph/sparseDot.s
+
+# target to generate assembly for a file
+controllers/graph/sparseDot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.s
+.PHONY : controllers/graph/sparseDot.cpp.s
 
 controllers/nodes/avl/avlNode.obj: controllers/nodes/avl/avlNode.cpp.obj
 .PHONY : controllers/nodes/avl/avlNode.obj
@@ -491,15 +539,21 @@ help:
 	@echo ... controllers/functions/functions.obj
 	@echo ... controllers/functions/functions.i
 	@echo ... controllers/functions/functions.s
-	@echo ... controllers/graph/avl/avlDot.obj
-	@echo ... controllers/graph/avl/avlDot.i
-	@echo ... controllers/graph/avl/avlDot.s
-	@echo ... controllers/graph/generator/graphGenerator.obj
-	@echo ... controllers/graph/generator/graphGenerator.i
-	@echo ... controllers/graph/generator/graphGenerator.s
-	@echo ... controllers/graph/sparse/sparseDot.obj
-	@echo ... controllers/graph/sparse/sparseDot.i
-	@echo ... controllers/graph/sparse/sparseDot.s
+	@echo ... controllers/graph/avlDot.obj
+	@echo ... controllers/graph/avlDot.i
+	@echo ... controllers/graph/avlDot.s
+	@echo ... controllers/graph/circularDot.obj
+	@echo ... controllers/graph/circularDot.i
+	@echo ... controllers/graph/circularDot.s
+	@echo ... controllers/graph/graphGenerator.obj
+	@echo ... controllers/graph/graphGenerator.i
+	@echo ... controllers/graph/graphGenerator.s
+	@echo ... controllers/graph/linkedDot.obj
+	@echo ... controllers/graph/linkedDot.i
+	@echo ... controllers/graph/linkedDot.s
+	@echo ... controllers/graph/sparseDot.obj
+	@echo ... controllers/graph/sparseDot.i
+	@echo ... controllers/graph/sparseDot.s
 	@echo ... controllers/nodes/avl/avlNode.obj
 	@echo ... controllers/nodes/avl/avlNode.i
 	@echo ... controllers/nodes/avl/avlNode.s

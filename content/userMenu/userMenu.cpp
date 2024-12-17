@@ -108,7 +108,7 @@ void setterActive(avlTree* activeTree, userStruct *user, linkedList *activeList)
     std::cout << std::endl;
 }
 
-void rentActive(linkedList *activeList, userStruct *user)
+void rentActive(linkedList *activeList, userStruct *user, CircularLinkedList *circularList)
 {
     std::string idActive;
     int days;
@@ -126,13 +126,15 @@ void rentActive(linkedList *activeList, userStruct *user)
     std::cout << "Ingrese los dias a rentar: ";
     std::cin >> days;
 
+
     activeList->setActiveAvailability(idActive, false, days);
     user->rentActives->addActive(activeList->findActiveById(idActive));
+    circularList->append(new nodeCircular(activeList->findActiveById(idActive), user->userName, user->rentActives->findActiveById(idActive)->userPropety, "Activo rentado: " + user->userName));
 
 
 }
 
-void activesRenter(userStruct *user)
+void activesRenter(userStruct *user, CircularLinkedList *circularList)
 {
     std::cout << "------------------- Activos rentados -------------------" << std::endl;
     int choice = 0;
@@ -157,6 +159,7 @@ void activesRenter(userStruct *user)
             std::cout << "Ingrese el ID del activo a devolver: ";
             std::cin >> idActive;
             user->rentActives->setActiveAvailability(idActive, true, 0);
+            circularList->append(new nodeCircular(user->rentActives->findActiveById(idActive), user->userName, user->rentActives->findActiveById(idActive)->userPropety, "Activo devuelto"));
             user->rentActives->deleteActive(idActive);
             break;
         }
@@ -171,7 +174,7 @@ void myActivesRenter(userStruct* user)
     std::cout << std::endl;
 };
 
-void userMenu(nodeMatrix* userMatrix, linkedList *activeList)
+void userMenu(nodeMatrix* userMatrix, linkedList *activeList, CircularLinkedList *circularList)
 {
     int choice;
 
@@ -191,10 +194,10 @@ void userMenu(nodeMatrix* userMatrix, linkedList *activeList)
             setterActive(userMatrix->user->actives, userMatrix->user, activeList);
             break;
         case 4:
-            rentActive(activeList, userMatrix->user);
+            rentActive(activeList, userMatrix->user, circularList);
             break;
         case 5:
-            activesRenter(userMatrix->user);
+            activesRenter(userMatrix->user, circularList);
             break;
         case 6:
             myActivesRenter(userMatrix->user);

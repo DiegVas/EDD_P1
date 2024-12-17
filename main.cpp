@@ -2,10 +2,11 @@
 #include <string>
 #include "./content/admin/admin.h"
 #include "content/userMenu/userMenu.h"
+#include "controllers/dataStructure/circularLinked/circularLinked.h"
 
 void show_Menu();
 
-void login(sparse_Matrix *userMatrix, linkedList *activeList);
+void login(sparse_Matrix *userMatrix, linkedList *activeList, CircularLinkedList *circularList);
 
 // TODO : Credenciales de usuario admin
 const std::string ADMIN_USER = "admin";
@@ -18,6 +19,7 @@ int main()
     int choice;
     linkedList activeList = linkedList();
     sparse_Matrix sparseMatrix = sparse_Matrix();
+    CircularLinkedList circularList = CircularLinkedList();
 
     // ! Usuarios y activos quemados
    // userStruct userTest = userStruct("elian_estrada", "Usuario completo", "", "", "");
@@ -52,7 +54,7 @@ int main()
 
          switch (choice) {
              case 1:
-                 login(&sparseMatrix, &activeList);
+                 login(&sparseMatrix, &activeList, &circularList);
                  break;
              case 2:
                  std::cout << "Gracias por preferirnos!." << std::endl;
@@ -75,7 +77,7 @@ void show_Menu()
 
 }
 
-void login(sparse_Matrix *userMatrix, linkedList *activeList)
+void login(sparse_Matrix *userMatrix, linkedList *activeList, CircularLinkedList *circularList)
 {
     std::cout << "*-------------------* LOGIN *-------------------*" << std::endl;
     std::string username, password, country, company;
@@ -84,7 +86,7 @@ void login(sparse_Matrix *userMatrix, linkedList *activeList)
     std::cout << "Ingrese la contraseña: ";
     std::cin >> password;
 
-    if (username == ADMIN_USER && password == ADMIN_PASS) menu_Admin(userMatrix);
+    if (username == ADMIN_USER && password == ADMIN_PASS) menu_Admin(userMatrix, circularList);
 
     std::cout << "Ingrese su pais: ";
     std::cin >> country;
@@ -97,7 +99,7 @@ void login(sparse_Matrix *userMatrix, linkedList *activeList)
 
     if (aux != nullptr && aux->user->password == password) {
         std::cout << "Bienvenido " << aux->userName << std::endl;
-        userMenu(aux, activeList);
+        userMenu(aux, activeList, circularList);
     } else {
         std::cout << "Usuario no encontrado" << std::endl;
     }

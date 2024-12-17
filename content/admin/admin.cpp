@@ -4,6 +4,7 @@
 #include "../../controllers/graph/avlDot.h"
 #include "../../controllers/graph/graphGenerator.h"
 #include "../../controllers/graph/linkedDot.h"
+#include "../../controllers/graph/circularDot.h"
 
 void show_MenuAdmin();
 void registerUser(sparse_Matrix *userMatrix);
@@ -124,8 +125,15 @@ void reportRentedUser(sparse_Matrix *userMatrix)
     }
 };
 
+void reportHistoryActive(CircularLinkedList* circular_linkeds)
+{
+    std::cout << "Generando reporte de transacciones..." << std::endl;
+    ;
+    generateGraphvizFiles(generateDotCircular(circular_linkeds), "Transacciones");
+};
+
 // ? Funciones de admin
-void menu_Admin(sparse_Matrix *userMatrix) {
+void menu_Admin(sparse_Matrix *userMatrix, CircularLinkedList *circularList) {
     int choiceAdmin;
 
     do {
@@ -155,6 +163,7 @@ void menu_Admin(sparse_Matrix *userMatrix) {
                 break;
             case 5:
                 std::cout << "*-------------------* Reporte transacciones *-------------------*" << std::endl;
+            reportHistoryActive(circularList);
                 break;
             case 6:
                 std::cout << "*-------------------* Reporte activos de un usuario *-------------------*" << std::endl;

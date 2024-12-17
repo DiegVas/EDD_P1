@@ -28,9 +28,12 @@ add_executable(EDD_P1_202300638 main.cpp
         controllers/graph/avlDot.cpp
         controllers/graph/linkedDot.h
         controllers/graph/linkedDot.cpp
+        controllers/graph/circularDot.h
+        controllers/graph/circularDot.cpp
         content/userMenu/userMenu.h
         content/userMenu/userMenu.cpp
         controllers/dataStructure/linkedList/linkedList.h
         controllers/dataStructure/linkedList/linkedList.cpp
         controllers/nodes/linkedList/nodeLinked.h
+
 )

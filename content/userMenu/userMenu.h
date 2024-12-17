@@ -6,8 +6,9 @@
 #define USERMENU_H
 
 #include "../../controllers/nodes/disperseMatrix/nodeMatrix.h"
+#include "../../controllers/dataStructure/circularLinked/circularLinked.h"
 
 
-void userMenu(nodeMatrix *userMatrix, linkedList *activeList);
+void userMenu(nodeMatrix *userMatrix, linkedList *activeList, CircularLinkedList *circularList);
 
 #endif //USERMENU_H
