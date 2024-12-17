@@ -6,8 +6,6 @@
 #define SPARSEMATRIX_H
 #include <string>
 #include "../../nodes/disperseMatrix/nodeMatrix.h"
-#include "../../structs/userStruct.h"
-
 
 class sparse_Matrix
 {

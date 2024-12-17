@@ -1,6 +1,7 @@
 
 #include "nodeMatrix.h"
 
+#include <algorithm>
 
 
 nodeMatrix::nodeMatrix(const std::string userName)
@@ -12,9 +13,12 @@ nodeMatrix::nodeMatrix(const std::string userName)
     this->down = nullptr;
     this->next = nullptr;
     this->prev = nullptr;
-
     this->user = nullptr;
-    this->userName = userName;
+
+    std::string modifiedUserName = userName; // Make a copy of the string
+    std::replace(modifiedUserName.begin(), modifiedUserName.end(), ' ', '_');
+
+    this->userName = modifiedUserName;
 }
 ;
 

@@ -5,113 +5,178 @@
 std::string sparseDot(sparse_Matrix* matrix) {
     std::stringstream dotContent;
     dotContent << "digraph G {\n";
-    dotContent << "    node [shape=rectangle];\n";
-    dotContent << "A0 [label=\"admin\"]\n";
+    dotContent << "label=\"Reporte de matriz dispersa\"";
+    dotContent << "labelloc=\"t\"";
+    dotContent << "    node [shape=box width=1.2 style=filled fillcolor=\"#85A98F\" color=transparent ];\n";
+    dotContent << "A0 [label=\"admin\" group=0 ]\n";
+    dotContent << "A0 -> " << matrix->headerH->userName << ";\n";
+    dotContent << "A0 -> " << matrix->headerV->userName << ";\n";
 
     // ! Primero las cabeceras horizontales
     dotContent<<"/*------------------- Cabeceras horizontales -------------------*/\n";
-    int row=0;
     nodeMatrix *auxH = matrix->headerH;
+    int group = 1;
     while (auxH!=nullptr)
     {
-        dotContent << "H" << row << " [label=\"" << auxH->userName << "\"];\n";
-        row++;
+        dotContent << auxH->userName << " [label=\"" << auxH->userName << "\" group=" << group << " ];\n";
         auxH = auxH->next;
+        group++;
     }
 
     // ! Luego las cabeceras verticales
     dotContent<<"/*------------------- Cabeceras verticales -------------------*/\n";
-    int column=0;
+
     nodeMatrix *auxV = matrix->headerV;
     while (auxV!=nullptr)
     {
-        dotContent << "V" << column << " [label=\"" << auxV->userName << "\"];\n";
-        column++;
+        dotContent << auxV->userName << " [label=\"" << auxV->userName << "\" group=0 ];\n";
         auxV = auxV->down;
     }
 
     // ! Columnas
-    dotContent<<"/*------------------- Columnas -------------------*/\n";
-    auxV = matrix->headerV;
-    auxH = matrix->headerH;
-    nodeMatrix *aux = auxH;
-    int colCounter = 1;
-    int rowCounter = 1;
 
+    dotContent<<"/*------------------- Columnas -------------------*/\n";
+    auxH = matrix->headerH;
+    auxV = nullptr;
+    group = 1;
     while (auxH!=nullptr)
     {
-        aux = auxH;
-        aux = aux->down;
-        auxV = matrix->headerV;
-        colCounter = 1;
+        auxV = auxH->down;
         while (auxV!=nullptr)
         {
-            if (matrix->findHeaderV(aux)->userName == auxV->userName)
-            {
-                dotContent << "H" << rowCounter << "V" << colCounter << " [label=\"" << aux->userName << "\"];\n";
-                aux = aux->down;
-            }
-            colCounter++;
+            dotContent << auxV->user->cell << " [label=\"" << auxV->userName << "\" group=" << group <<" ];\n";
             auxV = auxV->down;
         }
-
-        rowCounter++;
+        group++;
         auxH = auxH->next;
     }
 
+    dotContent<<"/*------------------- Enlaces horizontales -------------------*/\n";
 
-    // ! Relaciones Cabezales horizontales
-    dotContent<<"/*------------------- Relaciones horizontales -------------------*/\n";
-    colCounter = 1;
-    nodeMatrix *aux3 = matrix->headerH;
-    dotContent << "A0 -> H0";
-    while (aux3->next!=nullptr)
-    {
-        dotContent << " H"<<colCounter-1 <<" -> H" << colCounter;
-        colCounter++;
-        aux3 = aux3->next;
-    }
-    colCounter--;
-    dotContent << ";\n";
-    // ! Relaciones Cabezales horizontales inversas
-    while (aux3->prev!=nullptr)
-    {
-        dotContent << " H"<<colCounter <<" -> H" << colCounter-1;
-        colCounter--;
-        aux3 = aux3->prev;
-    }
-    dotContent << " H0 -> A0;\n";
-
-    // ! Relaciones horizontales de los hijos
-    colCounter = 1;
-    rowCounter = 1;
     auxH = matrix->headerH;
+    while (auxH != nullptr)
+    {
+        if (auxH->next != nullptr)
+        {
+            dotContent << auxH->userName << " -> " << auxH->next->userName << ";\n";
+        }
+        else
+        {
+            // ! Enlaces inversos
+            while (auxH->prev != nullptr)
+            {
+                dotContent << auxH->userName << " -> " << auxH->prev->userName << ";\n";
+                auxH = auxH->prev;
+            }
+            break;
+        };
+        auxH = auxH->next;
+    }
+
+    // ! Horizontales de nodos
+    auxH = nullptr;
     auxV = matrix->headerV;
-    aux = auxV;
 
     while (auxV != nullptr)
     {
-        aux = auxV;
-        aux = auxV->next;
-        auxH = matrix->headerH;
-         while (auxH != nullptr)
+        auxH = auxV->next;
+        dotContent << auxV->userName << " -> " << auxH->user->cell << ";\n";
+        while (auxH != nullptr)
         {
-            if (matrix->findHeaderH(aux)->userName == auxH->userName)
+            if (auxH->next != nullptr)
             {
-                dotContent << "H" << rowCounter << "V" << colCounter << " -> H" << rowCounter << ";\n";
-                dotContent << "H" << rowCounter << "V" << colCounter << " -> V" << colCounter << ";\n";
-                aux = aux->next;
-
+                dotContent << auxH->user->cell << " -> " << auxH->next->user->cell << ";\n";
             }
-             rowCounter++;
+            else
+            {
+                // ! Enlaces inversos
+                while (auxH->prev != nullptr)
+                {
+                    auxH->prev->user != nullptr ? dotContent << auxH->user->cell << " -> " << auxH->prev->user->cell << ";\n" : dotContent << auxH->user->cell << " -> " << auxH->prev->userName << ";\n";
+                    auxH = auxH->prev;
+                }
+                break;
+            }
             auxH = auxH->next;
         }
-
-
-        colCounter++;
-        auxV->down;
+        auxV = auxV->down;
     }
 
+    dotContent << "/*------------------- Enlaces verticales -------------------*/\n";
+    auxV = matrix->headerV;
+    while (auxV != nullptr)
+    {
+        if (auxV->down != nullptr)
+        {
+            dotContent << auxV->userName << " -> " << auxV->down->userName << ";\n";
+        }
+        else
+        {
+            // ! Enlaces inversos
+            while (auxV->up != nullptr)
+            {
+                dotContent << auxV->userName << " -> " << auxV->up->userName << ";\n";
+                auxV = auxV->up;
+            }
+            break;
+        }
+        auxV = auxV->down;
+    }
+
+    // ! Verticales de nodos
+    auxH = matrix->headerH;
+    auxV = nullptr;
+    while (auxH != nullptr)
+    {
+        auxV = auxH->down;
+        dotContent << auxH->userName << " -> " << auxV->user->cell << ";\n";
+        while (auxV != nullptr)
+        {
+            if (auxV->down != nullptr)
+            {
+                dotContent << auxV->user->cell << " -> " << auxV->down->user->cell << ";\n";
+            }
+            else
+            {
+                // ! Enlaces inversos
+                while (auxV->up != nullptr)
+                {
+                    auxV->up->user != nullptr ? dotContent << auxV->user->cell << " -> " << auxV->up->user->cell << ";\n" : dotContent << auxV->user->cell << " -> " << auxV->up->userName << ";\n";
+                    auxV = auxV->up;
+                }
+                break;
+            }
+            auxV = auxV->down;
+        }
+        auxH = auxH->next;
+    }
+
+    dotContent << "/*------------------- Encuadre -------------------*/\n";
+
+    auxH = matrix->headerH;
+    dotContent << "{ rank=same; A0;";
+    while (auxH!=nullptr)
+    {
+        dotContent << auxH->userName << ";";
+        auxH = auxH->next;
+    }
+    dotContent << "}\n";
+
+    auxH = nullptr;
+    auxV = matrix->headerV;
+    while (auxV!=nullptr)
+    {
+        auxH = auxV->next;
+        dotContent << "{ rank=same; " << auxV->userName << ";";
+        while (auxH!=nullptr)
+        {
+            dotContent << auxH->user->cell << ";";
+            auxH = auxH->next;
+        }
+        dotContent << "}\n";
+        auxV = auxV->down;
+        auxH = matrix->headerH;
+    }
 
     dotContent << "}\n";
     return dotContent.str();

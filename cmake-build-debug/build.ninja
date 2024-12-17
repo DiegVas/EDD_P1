@@ -73,8 +73,8 @@ build CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/disperseMatrix/nodeMatri
   OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
   OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\nodes\disperseMatrix
 
-build CMakeFiles/EDD_P1_202300638.dir/controllers/functions/toLowerCase.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/functions/toLowerCase.cpp || cmake_object_order_depends_target_EDD_P1_202300638
-  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\functions\toLowerCase.cpp.obj.d
+build CMakeFiles/EDD_P1_202300638.dir/controllers/functions/functions.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/functions/functions.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\functions\functions.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
   OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\functions
@@ -91,11 +91,53 @@ build CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/avl/avlNode.cpp.obj: CXX
   OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
   OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\nodes\avl
 
-build CMakeFiles/EDD_P1_202300638.dir/controllers/structs/activeStruct.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/structs/activeStruct.cpp || cmake_object_order_depends_target_EDD_P1_202300638
-  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\structs\activeStruct.cpp.obj.d
+build CMakeFiles/EDD_P1_202300638.dir/controllers/structs/actives/activeStruct.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/structs/actives/activeStruct.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\structs\actives\activeStruct.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
-  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\structs
+  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\structs\actives
+
+build CMakeFiles/EDD_P1_202300638.dir/controllers/structs/user/userStruct.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/structs/user/userStruct.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\structs\user\userStruct.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
+  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\structs\user
+
+build CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/graph/graphGenerator.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\graph\graphGenerator.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
+  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\graph
+
+build CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/graph/sparseDot.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\graph\sparseDot.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
+  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\graph
+
+build CMakeFiles/EDD_P1_202300638.dir/controllers/graph/avlDot.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/graph/avlDot.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\graph\avlDot.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
+  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\graph
+
+build CMakeFiles/EDD_P1_202300638.dir/controllers/graph/linkedDot.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/graph/linkedDot.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\graph\linkedDot.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
+  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\graph
+
+build CMakeFiles/EDD_P1_202300638.dir/content/userMenu/userMenu.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/content/userMenu/userMenu.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\content\userMenu\userMenu.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
+  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\content\userMenu
+
+build CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/linkedList/linkedList.cpp.obj: CXX_COMPILER__EDD_P1_202300638_unscanned_Debug C$:/Users/HP/Documents/Programacion/c++/EDD_P1_202300638/controllers/dataStructure/linkedList/linkedList.cpp || cmake_object_order_depends_target_EDD_P1_202300638
+  DEP_FILE = CMakeFiles\EDD_P1_202300638.dir\controllers\dataStructure\linkedList\linkedList.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir
+  OBJECT_FILE_DIR = CMakeFiles\EDD_P1_202300638.dir\controllers\dataStructure\linkedList
 
 
 # =============================================================================
@@ -105,7 +147,7 @@ build CMakeFiles/EDD_P1_202300638.dir/controllers/structs/activeStruct.cpp.obj: 
 #############################################
 # Link the executable EDD_P1_202300638.exe
 
-build EDD_P1_202300638.exe: CXX_EXECUTABLE_LINKER__EDD_P1_202300638_Debug CMakeFiles/EDD_P1_202300638.dir/main.cpp.obj CMakeFiles/EDD_P1_202300638.dir/content/admin/admin.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/sparseMatrix/sparseMatrix.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/disperseMatrix/nodeMatrix.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/functions/toLowerCase.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/avlTree/avlTree.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/avl/avlNode.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/structs/activeStruct.cpp.obj
+build EDD_P1_202300638.exe: CXX_EXECUTABLE_LINKER__EDD_P1_202300638_Debug CMakeFiles/EDD_P1_202300638.dir/main.cpp.obj CMakeFiles/EDD_P1_202300638.dir/content/admin/admin.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/sparseMatrix/sparseMatrix.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/disperseMatrix/nodeMatrix.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/functions/functions.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/avlTree/avlTree.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/avl/avlNode.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/structs/actives/activeStruct.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/structs/user/userStruct.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/graph/avlDot.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/graph/linkedDot.cpp.obj CMakeFiles/EDD_P1_202300638.dir/content/userMenu/userMenu.cpp.obj CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/linkedList/linkedList.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\EDD_P1_202300638.dir

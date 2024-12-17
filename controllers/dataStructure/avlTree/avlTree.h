@@ -2,18 +2,18 @@
 #ifndef AVLTREE_H
 #define AVLTREE_H
 #include "../../nodes/avl/avlNode.h"
-#include "../../structs/activeStruct.h"
-
+#include "../../structs/actives/activeStruct.h"
+#include "../linkedList/linkedList.h"
 
 class avlTree{
 
 public:
     avlNode *root;
 
-    void insert(activeStruct& activeValue);
-    void deleteNode(std::string id);
+    void insert(activeStruct* activeValue, linkedList *activeList);
+    void deleteNode(std::string id, linkedList* activeList);
     void getNode(std::string id);
-    void setterNode(std::string id, activeStruct newValue);
+    void setterNode(std::string id, std::string& newName, std::string& newDescription, activeStruct* active);
     avlTree();
 
 private:

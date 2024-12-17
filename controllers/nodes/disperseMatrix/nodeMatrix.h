@@ -3,7 +3,7 @@
 #ifndef NODEMATRIX_H
 #define NODEMATRIX_H
 #include <string>
-#include "../../structs/userStruct.h"
+#include "../../structs/user/userStruct.h"
 
 class nodeMatrix
 {

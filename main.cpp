@@ -1,14 +1,11 @@
 #include <iostream>
 #include <string>
 #include "./content/admin/admin.h"
-#include "controllers/dataStructure/sparseMatrix/sparseMatrix.h"
-#include "controllers/graph/graphGenerator.h"
-#include "controllers/graph/sparseDot.h"
-
+#include "content/userMenu/userMenu.h"
 
 void show_Menu();
 
-void login(sparse_Matrix *userMatrix);
+void login(sparse_Matrix *userMatrix, linkedList *activeList);
 
 
 // TODO : Credenciales de usuario admin
@@ -18,45 +15,44 @@ const std::string ADMIN_PASS = "admin";
 int main()
 {
     int choice;
+    linkedList activeList = linkedList();
     sparse_Matrix sparseMatrix = sparse_Matrix();
 
-    // Crear usuarios que representan las casillas (columna, fila)
-    userStruct user11 = userStruct("user11", "User 11", "123" , "Empresa1","Guatemala"); // Columna 1, Fila 1
-    userStruct user12 = userStruct("user12", "User 12", "123", "Empresa2","Guatemala"); // Columna 1, Fila 2
-    userStruct user21 = userStruct("user21", "User 21", "123", "Empresa1","Mexico");    // Columna 2, Fila 1
-    userStruct user22 = userStruct("user22", "User 22", "123",  "Empresa2","Mexico");    // Columna 2, Fila 2
-    userStruct user31 = userStruct("user31", "User 31", "123",  "Empresa1","El Salvador"); // Columna 3, Fila 1
-    userStruct user32 = userStruct("user32", "User 32", "123",  "Empresa2","El Salvador"); // Columna 3, Fila 2
+    // ! Usuarios y activos quemados
+    userStruct userTest = userStruct("test", "Usuario completo", "123", "max", "gua");
+    userStruct userTest1 = userStruct("test1", "Usuario completo 1", "123", "max", "gua");
+    userStruct userTest2 = userStruct("test2", "Usuario completo 2", "123", "max", "distelsa");
 
-    // Insertar los nodos en la matriz
-    sparseMatrix.insertHeaders(user11); // Guatemala, Empresa1
-    sparseMatrix.insertHeaders(user12); // Guatemala, Empresa2
-    sparseMatrix.insertHeaders(user21); // Mexico, Empresa1
-    sparseMatrix.insertHeaders(user22); // Mexico, Empresa2
-    sparseMatrix.insertHeaders(user31); // El Salvador, Empresa1
-    sparseMatrix.insertHeaders(user32); // El Salvador, Empresa2
+    // ! Activos quemados
+    activeStruct activeTest = activeStruct("Activo 1", "Activo de prueba", userTest.userName);
+    activeStruct actoveTest1 = activeStruct("activo2", "activo prueba", userTest1.userName);
+    activeStruct activeTest2 = activeStruct("activo3", "activo prueba", userTest2.userName);
 
+    userTest.actives->insert(&activeTest, &activeList);
+    userTest1.actives->insert(&actoveTest1, &activeList);
+    userTest2.actives->insert(&activeTest2, &activeList);
+    sparseMatrix.insertHeaders(userTest);
+    sparseMatrix.insertHeaders(userTest1);
+    sparseMatrix.insertHeaders(userTest2);
 
+     do {
+         show_Menu();
+         std::cin >> choice;
+         std::cout << std::endl;
 
-    generateGraphvizFiles(sparseDot(&sparseMatrix), "sparseMatrix");
+         switch (choice) {
+             case 1:
+                 login(&sparseMatrix, &activeList);
+                 break;
+             case 2:
+                 std::cout << "Gracias por preferirnos!." << std::endl;
+                 break;
+             default:
+                 std::cout << "Por favor ingrese una opcion valida" << std::endl;
+         }
 
-    // do {
-    //     show_Menu();
-    //     std::cin >> choice;
-    //     std::cout << std::endl;
-    //
-    //     switch (choice) {
-    //         case 1:
-    //             login(&sparseMatrix);
-    //             break;
-    //         case 2:
-    //             std::cout << "Gracias por preferirnos!." << std::endl;
-    //             break;
-    //         default:
-    //             std::cout << "Por favor ingrese una opcion valida" << std::endl;
-    //     }
-    //
-    // } while (choice != 2);
+     } while (choice != 2);
+
 }
 
 void show_Menu()
@@ -69,7 +65,7 @@ void show_Menu()
 
 }
 
-void login(sparse_Matrix *userMatrix)
+void login(sparse_Matrix *userMatrix, linkedList *activeList)
 {
     std::cout << "*-------------------* LOGIN *-------------------*" << std::endl;
     std::string username, password, country, company;
@@ -86,10 +82,12 @@ void login(sparse_Matrix *userMatrix)
     std::cin >> company;
     std::cout << std::endl;
 
-    userStruct userLogin = userStruct(username, "",password, country, company);
+    userStruct userLogin = userStruct(username, "",password, company, country);
     nodeMatrix *aux = userMatrix->searchNode(userLogin);
-    if (aux != nullptr) {
+
+    if (aux != nullptr && aux->user->password == password) {
         std::cout << "Bienvenido " << aux->userName << std::endl;
+        userMenu(aux, activeList);
     } else {
         std::cout << "Usuario no encontrado" << std::endl;
     }

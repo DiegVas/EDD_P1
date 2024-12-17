@@ -2,7 +2,6 @@
 
 #include <iostream>
 #include "../../nodes/disperseMatrix/nodeMatrix.h"
-#include "../../functions/functions.h"
 #include "sparseMatrix.h"
 
 sparse_Matrix::sparse_Matrix()
@@ -24,10 +23,7 @@ nodeMatrix* sparse_Matrix::getHeaderH(std::string value) const
 
     while (aux != nullptr)
     {
-        if (aux->userName == value)
-        {
-            return aux;
-        }
+        if (aux->userName == value) return aux;
         aux = aux->next;
     }
 
@@ -42,10 +38,8 @@ nodeMatrix* sparse_Matrix::getHeaderV(std::string value) const
 
     while (aux != nullptr)
     {
-        if (aux->userName == value)
-        {
-            return aux;
-        }
+        if (aux->userName == value) return aux;
+
         aux = aux->down;
     }
 
@@ -65,10 +59,7 @@ nodeMatrix* sparse_Matrix::insertHeaderH(std::string value)
 
     nodeMatrix* aux = headerH;
 
-    while (aux->next != nullptr)
-    {
-        aux = aux->next;
-    }
+    while (aux->next != nullptr) aux = aux->next;
 
     aux->next = newNode;
     newNode->prev = aux;
@@ -89,10 +80,7 @@ nodeMatrix* sparse_Matrix::insertHeaderV(std::string value)
 
     nodeMatrix* aux = headerV;
 
-    while (aux->down != nullptr)
-    {
-        aux = aux->down;
-    }
+    while (aux->down != nullptr) aux = aux->down;
 
     aux->down = newNode;
     newNode->up = aux;
@@ -143,10 +131,8 @@ int sparse_Matrix::insertHeaders(userStruct &user)
     }
 
     nodeMatrix* ThereisNodo = isOccupied(headH, headV);
-    if (ThereisNodo != nullptr)
-    {
-        return insertBehind(newUser, ThereisNodo);
-    }
+    if (ThereisNodo != nullptr) return insertBehind(newUser, ThereisNodo);
+
 
     // ! Si ya existe la cabezera horizontal y vertical
     nodeMatrix* auxH = headH->down;
@@ -191,10 +177,7 @@ void sparse_Matrix::insertFinal(nodeMatrix* value, nodeMatrix* headerH, nodeMatr
 void sparse_Matrix::insertFinalH(nodeMatrix* value, nodeMatrix* headerH)
 {
     nodeMatrix* aux = headerH;
-    while (aux->down != nullptr)
-    {
-        aux = aux->down;
-    }
+    while (aux->down != nullptr) aux = aux->down;
 
     aux->down = value;
     value->up = aux;
@@ -203,10 +186,8 @@ void sparse_Matrix::insertFinalH(nodeMatrix* value, nodeMatrix* headerH)
 void sparse_Matrix::insertFinalV(nodeMatrix* value, nodeMatrix* headerV)
 {
     nodeMatrix* aux = headerV;
-    while (aux->next != nullptr)
-    {
-        aux = aux->next;
-    }
+    while (aux->next != nullptr) aux = aux->next;
+
     aux->next = value;
     value->prev = aux;
 }
@@ -230,10 +211,7 @@ void sparse_Matrix::insertMiddleH(nodeMatrix* value, nodeMatrix* headerHN)
 nodeMatrix* sparse_Matrix::findHeaderH(nodeMatrix* nodeH)
 {
     nodeMatrix* aux = nodeH;
-    while (aux->up != nullptr)
-    {
-        aux = aux->up;
-    }
+    while (aux->up != nullptr) aux = aux->up;
     return aux;
 }
 
@@ -274,16 +252,13 @@ nodeMatrix* sparse_Matrix::isOccupied(nodeMatrix* headerH, nodeMatrix* headerV)
     nodeMatrix* auxH = headerH->down;
     nodeMatrix* headV = nullptr;
     nodeMatrix* find = nullptr;
+
     while (auxH != nullptr)
     {
         find = findHeaderV(auxH);
-        if (find == headerV)
-        {
-            return auxH;
-        }
+        if (find == headerV) return auxH;
         auxH = auxH->down;
     }
-
 
     return nullptr;
 }
@@ -320,10 +295,7 @@ nodeMatrix* sparse_Matrix::searchNode(const userStruct& user){
         {
             while (auxH != nullptr)
             {
-                if (auxH->userName == user.userName && auxH->user->password == user.password)
-                {
-                    return auxH;
-                }
+                if (auxH->userName == user.userName) return auxH;
                 auxH = auxH->behind;
             }
             return nullptr;

@@ -2,7 +2,7 @@
 
 #ifndef AVLNODE_H
 #define AVLNODE_H
-#include "../../structs/activeStruct.h"
+#include "../../structs/actives/activeStruct.h"
 
 
 class avlNode {
@@ -12,8 +12,8 @@ class avlNode {
     int balanceF;
     avlNode *left;
     avlNode *right;
-    activeStruct active;
-    avlNode(activeStruct &activeValue);
+    activeStruct* active;
+    avlNode(activeStruct* activeValue);
 };
 
 #endif //AVLNODE_H

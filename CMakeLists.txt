@@ -16,12 +16,21 @@ add_executable(EDD_P1_202300638 main.cpp
         controllers/dataStructure/avlTree/avlTree.cpp
         controllers/nodes/avl/avlNode.h
         controllers/nodes/avl/avlNode.cpp
-        controllers/structs/activeStruct.h
-        controllers/structs/activeStruct.cpp
-        controllers/structs/userStruct.cpp
-        controllers/structs/userStruct.h
+        controllers/structs/actives/activeStruct.h
+        controllers/structs/actives/activeStruct.cpp
+        controllers/structs/user/userStruct.cpp
+        controllers/structs/user/userStruct.h
         controllers/graph/graphGenerator.cpp
         controllers/graph/sparseDot.cpp
         controllers/graph/sparseDot.h
         controllers/graph/graphGenerator.h
+        controllers/graph/avlDot.h
+        controllers/graph/avlDot.cpp
+        controllers/graph/linkedDot.h
+        controllers/graph/linkedDot.cpp
+        content/userMenu/userMenu.h
+        content/userMenu/userMenu.cpp
+        controllers/dataStructure/linkedList/linkedList.h
+        controllers/dataStructure/linkedList/linkedList.cpp
+        controllers/nodes/linkedList/nodeLinked.h
 )

@@ -2,13 +2,16 @@
 #include <algorithm>
 #include "avlTree.h"
 
+#include <iostream>
+
 avlTree::avlTree() {
     this->root = nullptr;
 }
 
-void avlTree::insert(activeStruct &activeValue){
+void avlTree::insert(activeStruct* activeValue, linkedList *activeList){
 	avlNode *newNode = new avlNode(activeValue);
     insertNode(newNode, root);
+    activeList->addActive(activeValue);
 
 };
 
@@ -19,35 +22,13 @@ void avlTree::insertNode(avlNode *newNode, avlNode *&rootNode) {
         return;
     }
 
-    if (newNode->valor < rootNode->valor) {
-        insertNode(newNode, rootNode->left);
-    } else {
-       insertNode(newNode, rootNode->right);
-    }
+    newNode->valor < rootNode->valor ? insertNode(newNode, rootNode->left) : insertNode(newNode, rootNode->right);
 
     rootNode->balanceF=balanceFactor(rootNode);
 
-      if(rootNode->balanceF > 1){
-        if(rootNode->right->balanceF < 0){
-          return rotateLeftRight(rootNode);
-        }else{
-            return rotateRight(rootNode);
-        }
+    if(rootNode->balanceF > 1) rootNode->right->balanceF < 0 ? rotateLeftRight(rootNode) : rotateRight(rootNode);
 
-    }
-
-    if(rootNode->balanceF < -1){
-        if(rootNode->left->balanceF > 0)
-        {
-          return rotateRightLeft(rootNode);
-        }
-         else
-        {
-                return rotateLeft(rootNode);
-        }
-    }
-
-
+    if(rootNode->balanceF < -1) rootNode->left->balanceF > 0 ? rotateRightLeft(rootNode) : rotateLeft(rootNode);
 
 };
 
@@ -58,11 +39,11 @@ int avlTree::maxHeigth(avlNode *node) {
     int right = maxHeigth(node->right);
 
     return left > right ? left + 1 : right + 1;
-//    return 1 + std::max(maxHeigth(node->left), maxHeigth(node->right));
+
 };
 
 int avlTree::balanceFactor(avlNode *node) {
-    return maxHeigth(node->right) - maxHeigth(node->left);
+  return maxHeigth(node->right) - maxHeigth(node->left);
 };
 
 void avlTree::rotateRight(avlNode *&node) {
@@ -84,10 +65,15 @@ void avlTree::rotateLeft(avlNode *&node) {
 };
 
 void avlTree::assignBalance(avlNode *&node) {
-  	if (node == nullptr) return;
+    if (node == nullptr) return;
     node->balanceF = balanceFactor(node);
-    node->left->balanceF = balanceFactor(node->left);
-    node->right->balanceF = balanceFactor(node->right);
+
+    if (node->left != nullptr) {
+        node->left->balanceF = balanceFactor(node->left);
+    }
+    if (node->right != nullptr) {
+        node->right->balanceF = balanceFactor(node->right);
+    }
 };
 
 void avlTree::rotateRightLeft(avlNode *&node) {
@@ -103,15 +89,13 @@ void avlTree::rotateLeftRight(avlNode *&node) {
 avlNode *avlTree::minValueNode(avlNode* &node) {
     avlNode *current = node;
 
-    while (current->right != nullptr) {
-        current = current->right;
-    }
-
+    while (current->right != nullptr) current = current->right;
     return current;
 };
 
-void avlTree::deleteNode(std::string id) {
+void avlTree::deleteNode(std::string id, linkedList *activeList) {
     deleteNode(root, id);
+    activeList->deleteActive(id);
 };
 
 void avlTree::deleteNode(avlNode*& node, std::string value) {
@@ -144,23 +128,10 @@ void avlTree::deleteNode(avlNode*& node, std::string value) {
 
     node->balanceF = balanceFactor(node);
 
-    if (node->balanceF > 1) {
-        if (node->right->balanceF < 0) {
-            rotateRightLeft(node);
-        } else {
-            rotateLeft(node);
-        }
-        return;
-    }
+    if (node->balanceF > 1) return node->right->balanceF < 0 ? rotateRightLeft(node) : rotateLeft(node);
 
-    if (node->balanceF < -1) {
-        if (node->left->balanceF > 0) {
-            rotateLeftRight(node);
-        } else {
-            rotateRight(node);
-        }
-        return;
-    }
+    if (node->balanceF < -1) return node->left->balanceF > 0 ? rotateLeftRight(node) : rotateRight(node);
+
 };
 
 bool avlTree::isSheet(avlNode *node) {
@@ -185,20 +156,22 @@ void avlTree::getNode(std::string id) {
     // ! No se encontro el nodo
 };
 
-void avlTree::setterNode(std::string id, activeStruct newValue) {
+void avlTree::setterNode(std::string id, std::string& newName, std::string& newDescription, activeStruct* active) {
     avlNode *current = root;
 
     while (current != nullptr) {
         if (current->valor == id) {
-            current->valor = newValue.id;
+            current->active->name = newName;
+            current->active->description = newDescription;
             return;
         }
 
-        if (newValue.id < current->valor) {
+        if (active->id < current->valor) {
             current = current->left;
         } else {
             current = current->right;
         }
     }
     // ! No se encontro el nodo
+    std::cout << "No se encontro el nodo" << std::endl;
 };

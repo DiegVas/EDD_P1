@@ -152,6 +152,30 @@ content/admin/admin.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/content/admin/admin.cpp.s
 .PHONY : content/admin/admin.cpp.s
 
+content/userMenu/userMenu.obj: content/userMenu/userMenu.cpp.obj
+.PHONY : content/userMenu/userMenu.obj
+
+# target to build an object file
+content/userMenu/userMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/content/userMenu/userMenu.cpp.obj
+.PHONY : content/userMenu/userMenu.cpp.obj
+
+content/userMenu/userMenu.i: content/userMenu/userMenu.cpp.i
+.PHONY : content/userMenu/userMenu.i
+
+# target to preprocess a source file
+content/userMenu/userMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/content/userMenu/userMenu.cpp.i
+.PHONY : content/userMenu/userMenu.cpp.i
+
+content/userMenu/userMenu.s: content/userMenu/userMenu.cpp.s
+.PHONY : content/userMenu/userMenu.s
+
+# target to generate assembly for a file
+content/userMenu/userMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/content/userMenu/userMenu.cpp.s
+.PHONY : content/userMenu/userMenu.cpp.s
+
 controllers/dataStructure/avlTree/avlTree.obj: controllers/dataStructure/avlTree/avlTree.cpp.obj
 .PHONY : controllers/dataStructure/avlTree/avlTree.obj
 
@@ -175,6 +199,30 @@ controllers/dataStructure/avlTree/avlTree.s: controllers/dataStructure/avlTree/a
 controllers/dataStructure/avlTree/avlTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/avlTree/avlTree.cpp.s
 .PHONY : controllers/dataStructure/avlTree/avlTree.cpp.s
+
+controllers/dataStructure/linkedList/linkedList.obj: controllers/dataStructure/linkedList/linkedList.cpp.obj
+.PHONY : controllers/dataStructure/linkedList/linkedList.obj
+
+# target to build an object file
+controllers/dataStructure/linkedList/linkedList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/linkedList/linkedList.cpp.obj
+.PHONY : controllers/dataStructure/linkedList/linkedList.cpp.obj
+
+controllers/dataStructure/linkedList/linkedList.i: controllers/dataStructure/linkedList/linkedList.cpp.i
+.PHONY : controllers/dataStructure/linkedList/linkedList.i
+
+# target to preprocess a source file
+controllers/dataStructure/linkedList/linkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/linkedList/linkedList.cpp.i
+.PHONY : controllers/dataStructure/linkedList/linkedList.cpp.i
+
+controllers/dataStructure/linkedList/linkedList.s: controllers/dataStructure/linkedList/linkedList.cpp.s
+.PHONY : controllers/dataStructure/linkedList/linkedList.s
+
+# target to generate assembly for a file
+controllers/dataStructure/linkedList/linkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/dataStructure/linkedList/linkedList.cpp.s
+.PHONY : controllers/dataStructure/linkedList/linkedList.cpp.s
 
 controllers/dataStructure/sparseMatrix/sparseMatrix.obj: controllers/dataStructure/sparseMatrix/sparseMatrix.cpp.obj
 .PHONY : controllers/dataStructure/sparseMatrix/sparseMatrix.obj
@@ -224,53 +272,77 @@ controllers/functions/functions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/functions/functions.cpp.s
 .PHONY : controllers/functions/functions.cpp.s
 
-controllers/graph/graphGenerator.obj: controllers/graph/graphGenerator.cpp.obj
-.PHONY : controllers/graph/graphGenerator.obj
+controllers/graph/avl/avlDot.obj: controllers/graph/avl/avlDot.cpp.obj
+.PHONY : controllers/graph/avl/avlDot.obj
 
 # target to build an object file
-controllers/graph/graphGenerator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.obj
-.PHONY : controllers/graph/graphGenerator.cpp.obj
+controllers/graph/avl/avlDot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/avl/avlDot.cpp.obj
+.PHONY : controllers/graph/avl/avlDot.cpp.obj
 
-controllers/graph/graphGenerator.i: controllers/graph/graphGenerator.cpp.i
-.PHONY : controllers/graph/graphGenerator.i
+controllers/graph/avl/avlDot.i: controllers/graph/avl/avlDot.cpp.i
+.PHONY : controllers/graph/avl/avlDot.i
 
 # target to preprocess a source file
-controllers/graph/graphGenerator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.i
-.PHONY : controllers/graph/graphGenerator.cpp.i
+controllers/graph/avl/avlDot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/avl/avlDot.cpp.i
+.PHONY : controllers/graph/avl/avlDot.cpp.i
 
-controllers/graph/graphGenerator.s: controllers/graph/graphGenerator.cpp.s
-.PHONY : controllers/graph/graphGenerator.s
+controllers/graph/avl/avlDot.s: controllers/graph/avl/avlDot.cpp.s
+.PHONY : controllers/graph/avl/avlDot.s
 
 # target to generate assembly for a file
-controllers/graph/graphGenerator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/graphGenerator.cpp.s
-.PHONY : controllers/graph/graphGenerator.cpp.s
+controllers/graph/avl/avlDot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/avl/avlDot.cpp.s
+.PHONY : controllers/graph/avl/avlDot.cpp.s
 
-controllers/graph/sparseDot.obj: controllers/graph/sparseDot.cpp.obj
-.PHONY : controllers/graph/sparseDot.obj
+controllers/graph/generator/graphGenerator.obj: controllers/graph/generator/graphGenerator.cpp.obj
+.PHONY : controllers/graph/generator/graphGenerator.obj
 
 # target to build an object file
-controllers/graph/sparseDot.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.obj
-.PHONY : controllers/graph/sparseDot.cpp.obj
+controllers/graph/generator/graphGenerator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/generator/graphGenerator.cpp.obj
+.PHONY : controllers/graph/generator/graphGenerator.cpp.obj
 
-controllers/graph/sparseDot.i: controllers/graph/sparseDot.cpp.i
-.PHONY : controllers/graph/sparseDot.i
+controllers/graph/generator/graphGenerator.i: controllers/graph/generator/graphGenerator.cpp.i
+.PHONY : controllers/graph/generator/graphGenerator.i
 
 # target to preprocess a source file
-controllers/graph/sparseDot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.i
-.PHONY : controllers/graph/sparseDot.cpp.i
+controllers/graph/generator/graphGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/generator/graphGenerator.cpp.i
+.PHONY : controllers/graph/generator/graphGenerator.cpp.i
 
-controllers/graph/sparseDot.s: controllers/graph/sparseDot.cpp.s
-.PHONY : controllers/graph/sparseDot.s
+controllers/graph/generator/graphGenerator.s: controllers/graph/generator/graphGenerator.cpp.s
+.PHONY : controllers/graph/generator/graphGenerator.s
 
 # target to generate assembly for a file
-controllers/graph/sparseDot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparseDot.cpp.s
-.PHONY : controllers/graph/sparseDot.cpp.s
+controllers/graph/generator/graphGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/generator/graphGenerator.cpp.s
+.PHONY : controllers/graph/generator/graphGenerator.cpp.s
+
+controllers/graph/sparse/sparseDot.obj: controllers/graph/sparse/sparseDot.cpp.obj
+.PHONY : controllers/graph/sparse/sparseDot.obj
+
+# target to build an object file
+controllers/graph/sparse/sparseDot.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparse/sparseDot.cpp.obj
+.PHONY : controllers/graph/sparse/sparseDot.cpp.obj
+
+controllers/graph/sparse/sparseDot.i: controllers/graph/sparse/sparseDot.cpp.i
+.PHONY : controllers/graph/sparse/sparseDot.i
+
+# target to preprocess a source file
+controllers/graph/sparse/sparseDot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparse/sparseDot.cpp.i
+.PHONY : controllers/graph/sparse/sparseDot.cpp.i
+
+controllers/graph/sparse/sparseDot.s: controllers/graph/sparse/sparseDot.cpp.s
+.PHONY : controllers/graph/sparse/sparseDot.s
+
+# target to generate assembly for a file
+controllers/graph/sparse/sparseDot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/graph/sparse/sparseDot.cpp.s
+.PHONY : controllers/graph/sparse/sparseDot.cpp.s
 
 controllers/nodes/avl/avlNode.obj: controllers/nodes/avl/avlNode.cpp.obj
 .PHONY : controllers/nodes/avl/avlNode.obj
@@ -320,53 +392,53 @@ controllers/nodes/disperseMatrix/nodeMatrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/nodes/disperseMatrix/nodeMatrix.cpp.s
 .PHONY : controllers/nodes/disperseMatrix/nodeMatrix.cpp.s
 
-controllers/structs/activeStruct.obj: controllers/structs/activeStruct.cpp.obj
-.PHONY : controllers/structs/activeStruct.obj
+controllers/structs/actives/activeStruct.obj: controllers/structs/actives/activeStruct.cpp.obj
+.PHONY : controllers/structs/actives/activeStruct.obj
 
 # target to build an object file
-controllers/structs/activeStruct.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/structs/activeStruct.cpp.obj
-.PHONY : controllers/structs/activeStruct.cpp.obj
+controllers/structs/actives/activeStruct.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/structs/actives/activeStruct.cpp.obj
+.PHONY : controllers/structs/actives/activeStruct.cpp.obj
 
-controllers/structs/activeStruct.i: controllers/structs/activeStruct.cpp.i
-.PHONY : controllers/structs/activeStruct.i
+controllers/structs/actives/activeStruct.i: controllers/structs/actives/activeStruct.cpp.i
+.PHONY : controllers/structs/actives/activeStruct.i
 
 # target to preprocess a source file
-controllers/structs/activeStruct.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/structs/activeStruct.cpp.i
-.PHONY : controllers/structs/activeStruct.cpp.i
+controllers/structs/actives/activeStruct.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/structs/actives/activeStruct.cpp.i
+.PHONY : controllers/structs/actives/activeStruct.cpp.i
 
-controllers/structs/activeStruct.s: controllers/structs/activeStruct.cpp.s
-.PHONY : controllers/structs/activeStruct.s
+controllers/structs/actives/activeStruct.s: controllers/structs/actives/activeStruct.cpp.s
+.PHONY : controllers/structs/actives/activeStruct.s
 
 # target to generate assembly for a file
-controllers/structs/activeStruct.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/structs/activeStruct.cpp.s
-.PHONY : controllers/structs/activeStruct.cpp.s
+controllers/structs/actives/activeStruct.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/structs/actives/activeStruct.cpp.s
+.PHONY : controllers/structs/actives/activeStruct.cpp.s
 
-controllers/structs/userStruct.obj: controllers/structs/userStruct.cpp.obj
-.PHONY : controllers/structs/userStruct.obj
+controllers/structs/user/userStruct.obj: controllers/structs/user/userStruct.cpp.obj
+.PHONY : controllers/structs/user/userStruct.obj
 
 # target to build an object file
-controllers/structs/userStruct.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/structs/userStruct.cpp.obj
-.PHONY : controllers/structs/userStruct.cpp.obj
+controllers/structs/user/userStruct.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/structs/user/userStruct.cpp.obj
+.PHONY : controllers/structs/user/userStruct.cpp.obj
 
-controllers/structs/userStruct.i: controllers/structs/userStruct.cpp.i
-.PHONY : controllers/structs/userStruct.i
+controllers/structs/user/userStruct.i: controllers/structs/user/userStruct.cpp.i
+.PHONY : controllers/structs/user/userStruct.i
 
 # target to preprocess a source file
-controllers/structs/userStruct.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/structs/userStruct.cpp.i
-.PHONY : controllers/structs/userStruct.cpp.i
+controllers/structs/user/userStruct.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/structs/user/userStruct.cpp.i
+.PHONY : controllers/structs/user/userStruct.cpp.i
 
-controllers/structs/userStruct.s: controllers/structs/userStruct.cpp.s
-.PHONY : controllers/structs/userStruct.s
+controllers/structs/user/userStruct.s: controllers/structs/user/userStruct.cpp.s
+.PHONY : controllers/structs/user/userStruct.s
 
 # target to generate assembly for a file
-controllers/structs/userStruct.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/structs/userStruct.cpp.s
-.PHONY : controllers/structs/userStruct.cpp.s
+controllers/structs/user/userStruct.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_P1_202300638.dir\build.make CMakeFiles/EDD_P1_202300638.dir/controllers/structs/user/userStruct.cpp.s
+.PHONY : controllers/structs/user/userStruct.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -404,33 +476,42 @@ help:
 	@echo ... content/admin/admin.obj
 	@echo ... content/admin/admin.i
 	@echo ... content/admin/admin.s
+	@echo ... content/userMenu/userMenu.obj
+	@echo ... content/userMenu/userMenu.i
+	@echo ... content/userMenu/userMenu.s
 	@echo ... controllers/dataStructure/avlTree/avlTree.obj
 	@echo ... controllers/dataStructure/avlTree/avlTree.i
 	@echo ... controllers/dataStructure/avlTree/avlTree.s
+	@echo ... controllers/dataStructure/linkedList/linkedList.obj
+	@echo ... controllers/dataStructure/linkedList/linkedList.i
+	@echo ... controllers/dataStructure/linkedList/linkedList.s
 	@echo ... controllers/dataStructure/sparseMatrix/sparseMatrix.obj
 	@echo ... controllers/dataStructure/sparseMatrix/sparseMatrix.i
 	@echo ... controllers/dataStructure/sparseMatrix/sparseMatrix.s
 	@echo ... controllers/functions/functions.obj
 	@echo ... controllers/functions/functions.i
 	@echo ... controllers/functions/functions.s
-	@echo ... controllers/graph/graphGenerator.obj
-	@echo ... controllers/graph/graphGenerator.i
-	@echo ... controllers/graph/graphGenerator.s
-	@echo ... controllers/graph/sparseDot.obj
-	@echo ... controllers/graph/sparseDot.i
-	@echo ... controllers/graph/sparseDot.s
+	@echo ... controllers/graph/avl/avlDot.obj
+	@echo ... controllers/graph/avl/avlDot.i
+	@echo ... controllers/graph/avl/avlDot.s
+	@echo ... controllers/graph/generator/graphGenerator.obj
+	@echo ... controllers/graph/generator/graphGenerator.i
+	@echo ... controllers/graph/generator/graphGenerator.s
+	@echo ... controllers/graph/sparse/sparseDot.obj
+	@echo ... controllers/graph/sparse/sparseDot.i
+	@echo ... controllers/graph/sparse/sparseDot.s
 	@echo ... controllers/nodes/avl/avlNode.obj
 	@echo ... controllers/nodes/avl/avlNode.i
 	@echo ... controllers/nodes/avl/avlNode.s
 	@echo ... controllers/nodes/disperseMatrix/nodeMatrix.obj
 	@echo ... controllers/nodes/disperseMatrix/nodeMatrix.i
 	@echo ... controllers/nodes/disperseMatrix/nodeMatrix.s
-	@echo ... controllers/structs/activeStruct.obj
-	@echo ... controllers/structs/activeStruct.i
-	@echo ... controllers/structs/activeStruct.s
-	@echo ... controllers/structs/userStruct.obj
-	@echo ... controllers/structs/userStruct.i
-	@echo ... controllers/structs/userStruct.s
+	@echo ... controllers/structs/actives/activeStruct.obj
+	@echo ... controllers/structs/actives/activeStruct.i
+	@echo ... controllers/structs/actives/activeStruct.s
+	@echo ... controllers/structs/user/userStruct.obj
+	@echo ... controllers/structs/user/userStruct.i
+	@echo ... controllers/structs/user/userStruct.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
