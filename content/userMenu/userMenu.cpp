@@ -126,6 +126,13 @@ void rentActive(linkedList *activeList, userStruct *user, CircularLinkedList *ci
     std::cout << "Ingrese los dias a rentar: ";
     std::cin >> days;
 
+    activeStruct *active = activeList->findActiveById(idActive);
+    if (active == nullptr)
+    {
+        std::cout << "Activo no encontrado" << std::endl;
+        return;
+    }
+
 
     activeList->setActiveAvailability(idActive, false, days);
     user->rentActives->addActive(activeList->findActiveById(idActive));
